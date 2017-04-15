@@ -3,9 +3,9 @@
 
 ### 声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
 
-### apk安装 ：点击二维码或扫描安装
+### apk安装 ：
+[https://github.com/liu-xiao-dong/JD-Test/blob/master/app/app_release.apk](https://github.com/liu-xiao-dong/JD-Test/blob/master/app/app_release.apk)  
 
-[![JD-apk](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/scan.png?raw=true)(https://www.pgyer.com/geJ8)]
 
 
 ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/screen_home.jpg?raw=true)
