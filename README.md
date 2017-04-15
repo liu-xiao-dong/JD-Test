@@ -3,6 +3,8 @@
 
 ### 声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
 
+### apk安装 ：![JD-apk](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/scan.png?raw=true)
+
 
 ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/screen_home.jpg?raw=true)
 
