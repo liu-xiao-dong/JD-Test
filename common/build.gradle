@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    testCompile "junit:junit:$rootProject.junitVersion"
+    //retrofit
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    compile "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+    compile "com.google.code.gson:gson:$rootProject.gsonVersion"
+    //rxJava
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
+    //dagger
+    compile "com.google.dagger:dagger:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+
+    //ButterKnife
+    compile "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    //design
+    compile "com.android.support:design:$rootProject.supportLibraryVersion"
+
+    //leak
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    //fresco
+    compile "com.facebook.fresco:fresco:$rootProject.frescoVersion"
+    // RunTimePermissionRequest
+    compile "pub.devrel:easypermissions:$rootProject.easypermissionVersion"
+
+    // 支持 GIF 动图，需要添加
+    compile "com.facebook.fresco:animated-gif:$rootProject.frescoVersion"
+
+    // router
+    compile "com.alibaba:arouter-api:$rootProject.arouterVersion"
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
+
+
+}

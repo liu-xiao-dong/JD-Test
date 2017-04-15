@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxjs.common.widget.percentlayout.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_selfAspectRatio="9"
+    >
+    <com.sxjs.common.widget.imageview.ExpandImageView
+        android:id="@+id/type_title_img"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="28%"
+        app:actualImageScaleType="fitCenter"
+        app:viewAspectRatio="3.3"
+        />
+    <LinearLayout
+        android:id="@+id/type_title_more_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_widthPercent="20%"
+        app:layout_aspectRatio="235%"
+        >
+        <TextView
+            android:id="@+id/type_title_more_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            />
+        <com.sxjs.common.widget.imageview.ExpandImageView
+            android:id="@+id/type_title_arrow_img"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+    </LinearLayout>
+
+</com.sxjs.common.widget.percentlayout.PercentRelativeLayout>

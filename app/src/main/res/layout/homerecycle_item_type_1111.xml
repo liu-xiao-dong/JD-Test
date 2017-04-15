@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxjs.common.widget.aspect_ratio_layout.AspectRatioLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    app:Layout_viewAspectRatio="3.1">
+
+    <com.sxjs.common.widget.percentlayout.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/type1111_item_one_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_font"
+            android:textStyle="bold"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_marginTopPercentScreenX="2%"
+            app:layout_screenWidthTextSizePercent="4.5%" />
+
+        <TextView
+            android:id="@+id/type1111_item_one_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type1111_item_one_title"
+            android:textColor="@color/black_font"
+            android:singleLine="true"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_screenWidthTextSizePercent="3.5%" />
+
+        <com.sxjs.common.widget.percentlayout.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/type1111_item_one_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lineColor" />
+
+            <com.sxjs.common.widget.imageview.ExpandImageView
+                android:id="@+id/type1111_item_one_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/type1111_item_one_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                app:viewAspectRatio="1.17" />
+
+            <TextView
+                android:id="@+id/type1111_item_one_subscript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="@color/white"
+                app:layout_screenWidthTextSizePercent="3%" />
+        </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
+
+
+    </com.sxjs.common.widget.percentlayout.PercentLinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lineColor" />
+
+    <com.sxjs.common.widget.percentlayout.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/type1111_item_two_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_font"
+            android:textStyle="bold"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_marginTopPercentScreenX="2%"
+            app:layout_screenWidthTextSizePercent="4.5%" />
+
+        <TextView
+            android:id="@+id/type1111_item_two_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type1111_item_one_title"
+            android:textColor="@color/black_font"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_screenWidthTextSizePercent="3.5%" />
+
+        <com.sxjs.common.widget.percentlayout.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/type1111_item_two_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lineColor" />
+
+            <com.sxjs.common.widget.imageview.ExpandImageView
+                android:id="@+id/type1111_item_two_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/type1111_item_two_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                app:viewAspectRatio="1.17" />
+
+            <TextView
+                android:id="@+id/type1111_item_two_subscript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="@color/white"
+                app:layout_screenWidthTextSizePercent="3%" />
+        </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
+
+
+    </com.sxjs.common.widget.percentlayout.PercentLinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lineColor" />
+
+    <com.sxjs.common.widget.percentlayout.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/type1111_item_three_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_font"
+            android:textStyle="bold"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_marginTopPercentScreenX="2%"
+            app:layout_screenWidthTextSizePercent="4.5%" />
+
+        <TextView
+            android:id="@+id/type1111_item_three_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type1111_item_one_title"
+            android:textColor="@color/black_font"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_screenWidthTextSizePercent="3.5%" />
+
+        <com.sxjs.common.widget.percentlayout.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/type1111_item_three_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lineColor" />
+
+            <com.sxjs.common.widget.imageview.ExpandImageView
+                android:id="@+id/type1111_item_three_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/type1111_item_three_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                app:viewAspectRatio="1.17" />
+
+            <TextView
+                android:id="@+id/type1111_item_three_subscript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="@color/white"
+                app:layout_screenWidthTextSizePercent="3%" />
+        </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
+
+    </com.sxjs.common.widget.percentlayout.PercentLinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lineColor" />
+
+    <com.sxjs.common.widget.percentlayout.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/type1111_item_four_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_font"
+            android:textStyle="bold"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_marginTopPercentScreenX="2%"
+            app:layout_screenWidthTextSizePercent="4.5%" />
+
+        <TextView
+            android:id="@+id/type1111_item_four_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/type1111_item_four_title"
+            android:textColor="@color/black_font"
+            app:layout_marginLeftPercentScreenX="3%"
+            app:layout_screenWidthTextSizePercent="3.5%" />
+
+        <com.sxjs.common.widget.percentlayout.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/type1111_item_four_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lineColor" />
+
+            <com.sxjs.common.widget.imageview.ExpandImageView
+                android:id="@+id/type1111_item_four_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/type1111_item_four_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="2dp"
+                app:viewAspectRatio="1.17" />
+
+            <TextView
+                android:id="@+id/type1111_item_four_subscript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="@color/white"
+                app:layout_screenWidthTextSizePercent="3%" />
+        </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
+
+
+    </com.sxjs.common.widget.percentlayout.PercentLinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lineColor" />
+</com.sxjs.common.widget.aspect_ratio_layout.AspectRatioLinearLayout>

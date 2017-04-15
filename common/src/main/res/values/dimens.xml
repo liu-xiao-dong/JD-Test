@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fixed_min_width">120dp</dimen>
+    <dimen name="fixed_min_width_small_views">104dp</dimen>
+    <dimen name="fixed_max_width">168dp</dimen>
+    <dimen name="fixed_width_padding">0dp</dimen>   <!--12dp-->
+
+    <dimen name="fixed_height">50dp</dimen>
+    <dimen name="fixed_height_top_padding_inactive">0dp
+    </dimen><!-- 8(Top Padding) - 12/2(extra padding due to badges) = 2 -->
+    <dimen name="fixed_height_top_padding_active">0dp
+    </dimen><!-- 6(Top Padding) - 12/2(extra padding due to badges) = 0 -->
+    <dimen name="fixed_height_bottom_padding">10dp</dimen>
+
+    <dimen name="fixed_label_active">14sp</dimen>
+    <dimen name="fixed_label_inactive">12sp</dimen>
+    <item name="fixed_label_active_to_inactive_ratio" format="float" type="dimen">0.857</item>
+
+    <dimen name="fixed_icon_grid">24dp</dimen>   <!--24dp-->
+    <dimen name="fixed_icon_badge_grid_height">50dp   <!--36dp-->
+    </dimen><!-- this adds 6 dp extra to top and bottom icon -->
+    <dimen name="fixed_icon_badge_grid_width"> 60dp  <!--48dp-->
+    </dimen><!-- this adds 6 dp extra to top and bottom icon -->
+
+
+    <dimen name="shifting_min_width_active">96dp</dimen>
+    <dimen name="shifting_max_width_active">168dp</dimen>
+    <dimen name="shifting_min_width_inactive">64dp</dimen>
+    <dimen name="shifting_max_width_inactive">96dp</dimen>
+    <dimen name="shifting_width_custom_padding">6dp</dimen>
+
+    <dimen name="shifting_height">56dp</dimen>
+    <dimen name="shifting_height_bottom_padding_inactive">16dp
+    </dimen><!-- not used because in inactive state text-view will be hidden and for icon top padding would be enough -->
+    <dimen name="shifting_height_bottom_padding_active">10dp</dimen>
+    <dimen name="shifting_height_top_padding_active">0dp
+    </dimen><!-- 6(Top padding) - 12/2(extra padding due to badges) = 0 -->
+    <dimen name="shifting_height_top_padding_inactive">10dp
+    </dimen><!-- 56(total) - 24(icon) - 16(bottom padding inactive) = 16 ||| 16 - 12/2(extra padding due to badges)  = 10-->
+
+    <dimen name="shifting_label">14sp</dimen>
+
+
+    <dimen name="shifting_icon_grid">24dp</dimen>
+    <dimen name="shifting_icon_badge_grid_height">36dp</dimen>
+    <dimen name="shifting_icon_badge_grid_width">48dp</dimen>
+
+    <dimen name="bottom_navigation_elevation">8dp</dimen>
+    <dimen name="bottom_navigation_height">50dp</dimen>
+    <dimen name="bottom_navigation_padded_height">64dp</dimen>
+    <dimen name="bottom_navigation_top_margin_correction">-8dp</dimen><!-- 64 - 56 = 8 -->
+
+    <dimen name="badge_text_size">10sp</dimen><!-- 10 -->
+    <dimen name="badge_corner_radius">13dp</dimen><!-- 15 -->
+    <dimen name="badge_width_padding">4dp</dimen><!-- 4 -->
+    <dimen name="badge_height_padding">1dp</dimen><!-- 1 -->
+    <dimen name="badge_top_margin">4dp</dimen><!-- 2 -->
+
+    //========= adapter ==========
+    <dimen name="def_height">50dp</dimen>
+
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+
+    //============UpToDownViewSwitcher =========
+    <dimen name="animator_translate_distance">40dp</dimen>
+
+
+
+</resources>

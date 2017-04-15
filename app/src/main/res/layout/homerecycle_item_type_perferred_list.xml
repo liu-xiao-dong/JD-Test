@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    >
+    <com.sxjs.common.widget.percentlayout.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+
+
+        <TextView
+            android:id="@+id/type_preferred_list_item_one_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_screenWidthTextSizePercent="4.0%"
+            android:textColor="@color/black_font"
+            android:lines="2"
+            />
+
+        <com.sxjs.common.widget.imageview.ExpandImageView
+            android:layout_below="@+id/type_preferred_list_item_one_title"
+            android:id="@+id/type_preferred_list_item_one_img1"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%"
+            android:layout_height="wrap_content"
+            app:viewAspectRatio="1"
+            />
+        <com.sxjs.common.widget.imageview.ExpandImageView
+            android:layout_below="@+id/type_preferred_list_item_one_title"
+            android:layout_toRightOf="@+id/type_preferred_list_item_one_img1"
+            android:id="@+id/type_preferred_list_item_one_img2"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%"
+            android:layout_height="wrap_content"
+            app:viewAspectRatio="1"
+            />
+
+
+
+
+    </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/lineColor"/>
+    <com.sxjs.common.widget.percentlayout.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/type_preferred_list_item_two_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_screenWidthTextSizePercent="4.0%"
+            android:textColor="@color/black_font"
+            android:lines="2"
+            />
+
+
+            <com.sxjs.common.widget.imageview.ExpandImageView
+                android:layout_below="@+id/type_preferred_list_item_two_title"
+                android:id="@+id/type_preferred_list_item_two_img1"
+                android:layout_width="0dp"
+                app:layout_widthPercent="50%"
+                android:layout_height="wrap_content"
+                app:viewAspectRatio="1"
+                />
+            <com.sxjs.common.widget.imageview.ExpandImageView
+                android:layout_below="@+id/type_preferred_list_item_two_title"
+                android:layout_toRightOf="@+id/type_preferred_list_item_two_img1"
+                android:id="@+id/type_preferred_list_item_two_img2"
+                android:layout_width="0dp"
+                app:layout_widthPercent="50%"
+                android:layout_height="wrap_content"
+                app:viewAspectRatio="1"
+                />
+
+
+
+    </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
+
+
+</LinearLayout>

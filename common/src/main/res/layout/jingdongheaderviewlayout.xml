@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/desc_ll"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="让购物更便捷"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/status_test"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="下拉刷新..."
+            />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/desc_ll"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:clipChildren="true"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ren"
+            android:layout_width="52dp"
+            android:layout_height="73dp" 
+            android:src="@drawable/xm"
+            />
+        <ImageView
+            android:id="@+id/hezi"
+            android:layout_marginRight="-3dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="18dp"
+            android:layout_height="15dp"
+            android:src="@drawable/xk"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/donghua"
+            android:layout_width="49dp"
+            android:layout_height="73dp"
+            android:src="@drawable/refresh_down_icon"
+            />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

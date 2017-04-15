@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/xn"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/xo"
+        android:duration="60" />
+    <item
+        android:drawable="@drawable/xp"
+        android:duration="60" />
+</animation-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.sxjs.common.widget.autoscrollviewpager.BGABanner
+        android:id="@+id/banner"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:banner_indicatorGravity="bottom|right"
+        app:banner_pointContainerBackground="@color/transparent"
+        app:banner_pageChangeDuration="3500"
+        app:banner_placeholderDrawable="@drawable/holder_img"
+        app:banner_tipTextSize="12sp"
+        app:banner_viewAspectRatio="2.32"
+        app:banner_transitionEffect="defaultEffect" />
+</LinearLayout>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.sxjs.jd"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        jackOptions {
+            enabled false
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+        //此风味是为了使用Instant Run
+        /*productFlavors {
+            dev {
+                // To avoid using legacy multidex, set minSdkVersion to 21 or higher.
+                minSdkVersion 21
+                versionNameSuffix "-dev"
+                applicationIdSuffix '.dev'
+            }
+        }*/
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' , 'x86'//, 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    compile "com.android.support.constraint:constraint-layout:$rootProject.constraintVersion"
+    testCompile "junit:junit:$rootProject.junitVersion"
+    compile project(':common')
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
+    compile project(':testmodule')
+
+}

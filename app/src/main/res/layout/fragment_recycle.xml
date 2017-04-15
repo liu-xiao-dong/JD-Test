@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.sxjs.common.widget.headerview.JDHeaderView
+    android:id="@+id/rotate_header_list_view_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    cube_ptr:ptr_duration_to_close="200"
+    cube_ptr:ptr_duration_to_close_header="400"
+    cube_ptr:ptr_keep_header_when_refresh="true"
+    cube_ptr:ptr_pull_to_fresh="false"
+    cube_ptr:ptr_ratio_of_header_height_to_refresh="1.0"
+    cube_ptr:ptr_resistance="1.7">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</com.sxjs.common.widget.headerview.JDHeaderView>
+    <FrameLayout
+        android:id="@+id/home_title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <View
+            android:id="@+id/home_title_bar_bg_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/scanning_layout"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/home_title_bar_scan_icon_selector"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="扫啊扫"
+                    android:textColor="@color/home_title_bar_font_color_selector"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/home_title_bar_search_corner_bg"
+                >
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/search_icon"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text="运动户外超级品牌类日 跨店铺跨店铺"
+                    />
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/microphone"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/advisory_layout"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/home_title_bar_advisory_icon_selector"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="消息"
+                    android:textColor="@color/home_title_bar_font_color_selector"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

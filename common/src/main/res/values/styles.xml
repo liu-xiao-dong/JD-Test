@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="NoBackGroundDialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    //bottom_navigation_bar
+    <style name="BadgeText" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">@dimen/badge_text_size</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginTop">@dimen/badge_top_margin</item>
+        <item name="android:paddingRight">@dimen/badge_width_padding</item>
+        <item name="android:paddingLeft">@dimen/badge_width_padding</item>
+        <item name="android:paddingBottom">@dimen/badge_height_padding</item>
+        <item name="android:paddingTop">@dimen/badge_height_padding</item>
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

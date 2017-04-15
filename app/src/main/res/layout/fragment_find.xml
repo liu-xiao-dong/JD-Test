@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/scanning_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/scanning_cmmon" />
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:src="@drawable/find_icon"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/advisory_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/advisory_common" />
+        
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/advisory_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/my_care"
+            />
+
+    </RelativeLayout>
+    <com.sxjs.common.widget.headerview.JDHeaderView
+        android:id="@+id/find_pull_refresh_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="300"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.0"
+        cube_ptr:ptr_resistance="2.0">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/find_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+    </com.sxjs.common.widget.headerview.JDHeaderView>
+
+</LinearLayout>

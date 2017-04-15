@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxjs.common.widget.aspect_ratio_layout.AspectRatioRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/home_jd_bulletin_corner_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    app:Layout_viewAspectRatio="9"
+    >
+
+    <com.sxjs.common.widget.imageview.ExpandImageView
+        android:id="@+id/title_img"
+        android:layout_width="73dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/jd_news_tit"
+        />
+
+    <com.sxjs.common.widget.view_switcher.UpDownViewSwitcher
+        android:layout_toRightOf="@+id/title_img"
+        android:layout_toLeftOf="@+id/more_ll"
+        android:id="@+id/home_view_switcher"
+        app:animator_duration="400"
+        app:switch_duration="3000"
+        app:up_to_down="false"
+        app:animator_translate_distance="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/more_ll"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lineColor"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textColor="@color/black_font"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+</com.sxjs.common.widget.aspect_ratio_layout.AspectRatioRelativeLayout>

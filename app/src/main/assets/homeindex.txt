@@ -1,0 +1,829 @@
+{
+    "code": "0",
+    "itemInfoList": [
+        {
+            "itemType": "topBanner",
+            "module": "topBanner",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4903/41/12296166/85214/15205dd6/58d92373N127109d8.jpg!q70.jpg",
+                    "clickUrl": "男装超级品牌类日"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4309/113/2596274814/85129/a59c5f5e/58d4762cN72d7dd75.jpg",
+                    "clickUrl": "京东春茶季"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4675/88/704144946/137165/bbbe8a4e/58d3a160N621fc59c.jpg!q70.jpg",
+                    "clickUrl": "装出新高度"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4627/177/812580410/198036/24a79c26/58d4f1e9N5b9fc5ee.jpg!q70.jpg",
+                    "clickUrl": "宝宝出行利器"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t3097/241/9768114398/78418/47e4335e/58d8a637N6f178fbd.jpg!q70.jpg",
+                    "clickUrl": "慕尼黑新品上市"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s720x322_jfs/t4282/364/2687292678/87315/e4311cd0/58d4d923N24a2f5eb.jpg!q70.jpg",
+                    "clickUrl": "空调让你百试不爽"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4162/171/1874609280/92523/a1206b3f/58c7a832Nc8582e81.jpg",
+                    "clickUrl": "奥妙全新上市"
+                },
+                {
+                    "imageUrl": "https://img1.360buyimg.com/da/jfs/t4387/338/1185667042/56822/bcd7fc3d/58d9e139Nadf09c53.jpg",
+                    "clickUrl": "吸尘品类直降"
+                }
+            ]
+        },
+        {
+            "itemType": "iconList",
+            "module": "iconList",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t4477/120/1165061315/6371/82dfb453/58d9a09dNe4ba11e3.png",
+                    "clickUrl": "京东超市",
+                    "itemTitle": "京东超市"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3286/167/1907269933/15789/da204cbe/57d53f16Nf3431cbd.png",
+                    "clickUrl": "全球购",
+                    "itemTitle": "全球购"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3208/285/1806438443/12227/e35aa8d/57d5407cN0d6adf20.png",
+                    "clickUrl": "服装城",
+                    "itemTitle": "服装城"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3079/222/1812395993/14681/29321e2c/57d54122N700d9c1b.png",
+                    "clickUrl": "京东生鲜",
+                    "itemTitle": "京东生鲜"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3664/294/1570684882/19292/8b63dd4d/582adfbcNf82877de.png",
+                    "clickUrl": "京东到家",
+                    "itemTitle": "京东到家"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3118/92/1836879034/12255/981e942a/57d54204N32b71c87.png",
+                    "clickUrl": "充值中心",
+                    "itemTitle": "充值中心"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3424/278/301037516/11616/98748707/58096edbNcd05f66b.png",
+                    "clickUrl": "惠赚钱",
+                    "itemTitle": "惠赚钱"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3202/244/9578875998/14975/afaba260/58d4ee32N29ed1055.png",
+                    "clickUrl": "领券",
+                    "itemTitle": "领券"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3199/169/1818813995/12570/62402b0d/57d54364Needc47cd.png",
+                    "clickUrl": "物流查询",
+                    "itemTitle": "物流查询"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s80x80_jfs/t3211/295/1824792746/12749/a74e2524/57d543ebN25337ef2.png",
+                    "clickUrl": "我的关注",
+                    "itemTitle": "我的关注"
+                }
+            ]
+        },
+        {
+            "itemType": "newUser",
+            "module": "newUser",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3229/183/8420242660/31884/d556597b/58c24709Nf44579e2.jpg!q70.jpg",
+                    "clickUrl": "新用户专享",
+                    "itemTitle": "京东超市",
+                    "itemSubTitle": "",
+                    "itemRecommendedLanguage": "",
+                    "itemSubscript": "",
+                    "itemBackgroundImageUrl": ""
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3169/299/6474778567/28114/54ee4d66/58a6d4b3N69c6e565.jpg!q70.jpg",
+                    "clickUrl": "新人红包"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4444/167/618381657/13640/b412722b/58d2a204N83cc6dbd.jpg!q70.jpg",
+                    "clickUrl": "9.9包邮"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4303/36/2607357917/11737/a2500194/58d3ef41N8458849c.jpg!q70.jpg",
+                    "clickUrl": "衣食住行"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3862/351/2286895626/41651/b9430342/58a6d991Ne9c82f29.jpg!q70.jpg",
+                    "clickUrl": "首单满99新人礼包"
+                }
+            ]
+        },
+        {
+            "itemType": "jdBulletin",
+            "module": "jdBulletin",
+            "itemContentList": [
+                {
+                    "clickUrl": "男装超品类日，跨店3件7折！",
+                    "itemTitle": "热",
+                    "itemSubTitle": "男装超品类日，跨店3件7折！"
+                },
+                {
+                    "clickUrl": "运动大牌春季特惠，满800减100！",
+                    "itemTitle": "抢",
+                    "itemSubTitle": "运动大牌春季特惠，满800减100！"
+                },
+                {
+                    "clickUrl": "美妆护肤，领券满199元减100！",
+                    "itemTitle": "大促",
+                    "itemSubTitle": "美妆护肤，领券满199元减100！"
+                }
+            ]
+        },
+        {
+            "itemType": "jdSpikeHeader",
+            "module": "jdSpike",
+            "itemContentList": [
+                {
+                    "clickUrl": "秒杀专场",
+                    "itemTitle": "16点场",
+                    "itemSubTitle": "莫负春光进来逛逛",
+                    "itemRecommendedLanguage": "500000"
+                }
+            ]
+        },
+        {
+            "itemType": "jdSpikeContent",
+            "module": "jdSpike",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t4186/44/1480543850/122209/11be676e/58c2676aN66a9c5ed.jpg!q70.jpg",
+                    "clickUrl": "福临门",
+                    "itemTitle": "73.9",
+                    "itemSubTitle": "119.9",
+                    "itemSubscript": "好货"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t799/288/51305470/57357/7bfb28a2/54f52c83Nb6c2cef5.jpg!q70.jpg",
+                    "clickUrl": "刮胡刀",
+                    "itemTitle": "299",
+                    "itemSubTitle": "538",
+                    "itemSubscript": "品质"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t2158/275/1115377524/647696/6c177b0/56792777N23d7cda0.png!q70.jpg",
+                    "clickUrl": "ipad",
+                    "itemTitle": "3199",
+                    "itemSubTitle": "3688",
+                    "itemSubscript": "经典"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t3790/31/64611920/414303/ae44859b/57fde07dN0c1bae84.jpg!q70.jpg",
+                    "clickUrl": "美女玩具",
+                    "itemTitle": "99",
+                    "itemSubTitle": "158"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t3208/354/1454144017/140641/d876f6d2/57cd3936N647f9d2d.jpg!q70.jpg",
+                    "clickUrl": "男裤",
+                    "itemTitle": "199",
+                    "itemSubTitle": "338"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t4582/132/1058213405/68736/4f05024/58d8595fN6d4f8092.jpg!q70.jpg",
+                    "clickUrl": "自行车",
+                    "itemTitle": "599",
+                    "itemSubTitle": "1138"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t3847/3/2992821407/161733/b17f17ef/58748cb0N721e7a20.jpg!q70.jpg",
+                    "clickUrl": "皮鞋",
+                    "itemTitle": "159",
+                    "itemSubTitle": "435"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t2023/299/2364635879/258423/c2d89f21/56cfc313Nc798c4c9.jpg!q70.jpg",
+                    "clickUrl": "减肥",
+                    "itemTitle": "399",
+                    "itemSubTitle": "638"
+                }
+            ]
+        },
+        {
+            "itemType": "showEvent",
+            "module": "showEvent",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t5011/52/11315246/33679/3af01dc4/58d914ccN6070524e.jpg!q70.jpg",
+                    "clickUrl": "品牌折扣"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4261/164/2985229152/21008/6cee35d7/58d93ef1Nf05dc380.jpg!q70.jpg",
+                    "clickUrl": "主会场"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4678/353/1126087781/29490/bd75b7c9/58d91540N13ccd112.jpg!q70.jpg",
+                    "clickUrl": "尖货折扣"
+                }
+            ]
+        },
+        {
+            "itemType": "findGoodStuff",
+            "module": "findGoodStuff",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t4573/49/77501525/294199/65cf62f/58c93bb7N6ee68c13.jpg!q70.jpg",
+                    "clickUrl": "发现好货"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t4459/60/496148966/255134/5fac7ade/58d0bcdcNe426a111.jpg!q70.jpg",
+                    "clickUrl": "优品专辑"
+                }
+            ]
+        },
+        {
+            "itemType": "type_211",
+            "module": "ranking",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/s220x220_jfs/t3109/149/6463463286/615183/baa7c372/58a56ef0N1918a94c.jpg!q70.jpg",
+                    "clickUrl": "排行榜",
+                    "itemTitle": "排行榜",
+                    "itemSubTitle": "网罗全民挚爱",
+                    "itemRecommendedLanguage": "人气火爆",
+                    "itemSubscript": "",
+                    "itemBackgroundImageUrl": ""
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com//mobilecms/s276x276_jfs/t2530/192/740692034/176325/e9a87149/5664ead7Nf49c4ae5.jpg!q70.jpg",
+                    "clickUrl": "品牌头条",
+                    "itemTitle": "品牌头条",
+                    "itemSubTitle": "大牌很任性"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com//mobilecms/s276x276_jfs/t3214/176/5823546732/128532/624229f6/5881b1e3N6fe68d4c.jpg!q70.jpg",
+                    "clickUrl": "闪购",
+                    "itemTitle": "闪购",
+                    "itemSubTitle": "品牌特卖"
+                }
+            ]
+        },
+        {
+            "itemType": "type_Title",
+            "module": "loveLife",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t2878/152/3484829401/8909/e1cf0ca/578de36bNae7bb54a.png!q70.jpg",
+                    "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png"
+                }
+            ]
+        },
+        {
+            "itemType": "type_22",
+            "module": "loveLife",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4390/306/810593954/43649/db7da1a3/58d4f31dN7f95f121.jpg!q70.jpg",
+                    "clickUrl": "玩3c",
+                    "itemTitle": "玩3C",
+                    "itemSubTitle": "抢iPhone7红",
+                    "itemRecommendedLanguage": "12期免息 燃"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3277/14/9826379985/16115/3bb30dc7/58d8ce10Nc69a898e.jpg!q70.jpg",
+                    "clickUrl": "京东家电",
+                    "itemTitle": "京东家电",
+                    "itemSubTitle": "800元现金券"
+                }
+            ]
+        },
+        {
+            "itemType": "type_22",
+            "module": "loveLife",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4663/320/926911638/15321/7cdb9777/58d66630N3aa7e836.jpg!q70.jpg",
+                    "clickUrl": "京东超市",
+                    "itemTitle": "京东超市",
+                    "itemSubTitle": "纸品二免一"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4516/339/787269831/33006/b2d29efe/58d5008dN359de233.jpg!q70.jpg",
+                    "clickUrl": "爱家",
+                    "itemTitle": "爱家",
+                    "itemSubTitle": "居家物199-100",
+                    "itemRecommendedLanguage": "家居小商品节"
+                }
+            ]
+        },
+        {
+            "itemType": "type_1111",
+            "module": "loveLife",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4675/199/1080554759/28689/4d53c00e/58d88d51N32dfc9e7.png!q70.jpg",
+                    "clickUrl": "爱宝宝",
+                    "itemTitle": "爱宝宝",
+                    "itemSubTitle": "满199减50",
+                    "itemSubscript": "玩大牌",
+                    "itemBackgroundImageUrl": ""
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4273/172/3010816439/22923/3096939d/58d8b505N70640765.jpg!q70.jpg",
+                    "clickUrl": "爱美丽",
+                    "itemTitle": "爱美丽",
+                    "itemRecommendedLanguage": "断货色",
+                    "itemSubTitle": "YSL黑管唇釉"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4426/51/1099039770/16697/134acadd/58d8d2e1N3b849fd9.jpg!q70.jpg",
+                    "clickUrl": "爱吃",
+                    "itemTitle": "爱吃",
+                    "itemSubTitle": "领券99减50",
+                    "itemSubscript": "春茶节"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4543/232/1163237356/8249/e2e2069c/58d9c2ecN771ca3f0.jpg!q70.jpg",
+                    "clickUrl": "爱逛",
+                    "itemTitle": "爱逛",
+                    "itemRecommendedLanguage": "男装节",
+                    "itemSubTitle": "满399减100",
+                    "itemSubscript": "男装节"
+                }
+            ]
+        },
+        {
+            "itemType": "type_middleBanner",
+            "module": "loveLife",
+            "itemContentList": [
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4849/174/66501445/26867/afb327e2/58da04c2Ne94c71a9.jpg!q70.jpg",
+                    "clickUrl": "onPlus"
+                },
+                {
+                    "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4474/169/1143877107/79140/ed5bef21/58d8cfcfN7f38aa2b.jpg!q70.jpg",
+                    "clickUrl": "京东金融"
+                }
+            ]
+        },
+        {
+             "itemType": "type_Title",
+             "module": "enjoyQuality",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3910/235/1201548030/8292/e6734ea8/586c5dfdNe496351a.png!q70.jpg",
+                     "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png"
+                 }
+             ]
+        },
+         {
+             "itemType": "type_22",
+             "module": "enjoyQuality",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4006/224/2244560518/9852/ef5910c5/58a5a9d6N256f5a59.jpg!q70.jpg",
+                     "clickUrl": "全球尖货",
+                     "itemTitle": "全球尖货",
+                     "itemSubTitle": "全球自营好货",
+                     "itemRecommendedLanguage": "咖啡两件8折起"
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4960/90/219632618/31744/6878226d/58dcf1ceN93c6a0d0.jpg!q70.jpg",
+                     "clickUrl": "京东精选",
+                     "itemTitle": "京东精选",
+                     "itemSubTitle": "热销清洁用品"
+                 }
+             ]
+         },
+         {
+             "itemType": "type_22",
+             "module": "enjoyQuality",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4708/306/1455692721/40082/f0c41b41/58df3eebNaad923e2.jpg!q70.jpg",
+                     "clickUrl": "京东体育",
+                     "itemTitle": "京东体育",
+                     "itemSubTitle": "Adidas新品"
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4564/94/1700743703/16768/4e991094/58e452b0Nf63a3e85.jpg!q70.jpg",
+                     "clickUrl": "奢品大牌",
+                     "itemTitle": "奢品大牌",
+                     "itemSubTitle": "红牛腕表首发",
+                     "itemRecommendedLanguage": "赢F1赛事门票"
+                 }
+             ]
+         },
+         {
+             "itemType": "type_1111",
+             "module": "enjoyQuality",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4345/337/2553326860/9019/fa9f0929/58d3635bNb855811e.jpg!q70.jpg",
+                     "clickUrl": "环球时尚",
+                     "itemTitle": "环球时尚",
+                     "itemSubTitle": "自营999减300",
+                     "itemRecommendedLanguage": "领券秒",
+                     "itemBackgroundImageUrl": ""
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4633/29/1299987107/16036/bc962b27/58db73d8Neecbcf1c.jpg!q70.jpg",
+                     "clickUrl": "珠宝首饰",
+                     "itemTitle": "珠宝首饰",
+                     "itemRecommendedLanguage": "",
+                     "itemSubTitle": "周三大牌日"
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4597/189/132627122/12197/a2e0a6f7/58ca3949N8e5d6d3a.jpg!q70.jpg",
+                     "clickUrl": "设计师",
+                     "itemTitle": "设计师",
+                     "itemSubTitle": "潮流设计精选",
+                     "itemSubscript": ""
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4294/151/3313282445/43301/a11b69fc/58de3d2cN69d6e797.jpg!q70.jpg",
+                     "clickUrl": "达人精选",
+                     "itemTitle": "达人精选",
+                     "itemRecommendedLanguage": "",
+                     "itemSubTitle": "明天穿什么",
+                     "itemSubscript": ""
+                 }
+             ]
+         },
+         {
+             "itemType": "type_middleBanner",
+             "module": "enjoyQuality",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4759/228/335866634/60897/3bb75968/58df5e8cNf0c4eda2.jpg!q70.jpg",
+                     "clickUrl": "酸奶"
+                 },
+                 {
+                     "imageUrl": "https://img1.360buyimg.com/da/jfs/t4837/354/201802204/85676/36597451/58dcc1eeN8d75890c.jpg",
+                     "clickUrl": "家纺会场"
+                 }
+             ]
+         },
+         {
+           "itemType": "type_Title",
+           "module": "buyFeatures",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t2617/85/3472523842/8761/d9d50d92/578de6d1N9e38b8e5.png!q70.jpg",
+                   "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png"
+               }
+           ]
+         },
+          {
+           "itemType": "type_211",
+           "module": "buyFeatures",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3304/356/9072532459/37036/a4754515/58d07fb1N70f53812.jpg!q70.jpg",
+                   "clickUrl": "智能生活",
+                   "itemTitle": "智能生活",
+                   "itemSubTitle": "充电手机壳",
+                   "itemRecommendedLanguage": "低至1元"
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4708/61/810897649/8160/f3f2e55b/58d4f6a5Na53c818f.jpg!q70.jpg",
+                   "clickUrl": "京东众筹",
+                   "itemTitle": "京东众筹",
+                   "itemSubTitle": "复古摩托车"
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4396/44/69341097/13276/1aef1129/58c908f9Nb13c2a0d.jpg!q70.jpg",
+                   "clickUrl": "京东旅行",
+                   "itemTitle": "京东旅行",
+                   "itemSubTitle": 9.9元秒杀！
+               }
+           ]
+       },
+       {
+           "itemType": "type_211",
+           "module": "buyFeatures",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4318/2/3274776589/11646/6e30f776/58de587cN0220cbc7.jpg!q70.jpg",
+                   "clickUrl": "白条商城",
+                   "itemTitle": "白条商城",
+                   "itemSubTitle": "华为0首付",
+                   "itemRecommendedLanguage": "12期免息！"
+
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4150/285/3264727286/12150/5a823538/58dcba7cN8e35c8bf.jpg!q70.jpg",
+                   "clickUrl": "爱车生活",
+                   "itemTitle": "爱车生活",
+                   "itemSubTitle": "满299减80",
+                   "itemRecommendedLanguage": ""
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4597/73/1466661752/9409/828f73af/58dfb3cbNa0ddb2d5.jpg!q70.jpg",
+                   "clickUrl": "生活娱乐",
+                   "itemTitle": "生活娱乐",
+                   "itemSubTitle": "免费试用",
+                   "itemRecommendedLanguage": ""
+               }
+           ]
+       },
+       {
+           "itemType": "type_1111",
+           "module": "buyFeatures",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3307/361/6758961248/5097/139ba994/58acf800N0ced20ff.jpg!q70.jpg",
+                   "clickUrl": "二手清仓",
+                   "itemTitle": "二手清仓",
+                   "itemSubTitle": "iPhone6 秒杀",
+                   "itemRecommendedLanguage": "疯抢中",
+                   "itemBackgroundImageUrl": ""
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4201/263/3163279866/7205/c2f889b4/58dc7b40N1ad54f13.jpg!q70.jpg",
+                   "clickUrl": "大药房",
+                   "itemTitle": "大药房",
+                   "itemRecommendedLanguage": "",
+                   "itemSubTitle": "满149减30"
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4663/228/1474805074/30318/c3105ffb/58df7b77N92c085e7.png!q70.jpg",
+                   "clickUrl": "陪伴宝宝",
+                   "itemTitle": "陪伴宝宝",
+                   "itemSubTitle": "享一元福利",
+                   "itemSubscript": ""
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3160/296/7398092766/5606/33c36a38/58b5589aN0d064d75.jpg!q70.jpg",
+                   "clickUrl": "京东拍卖",
+                   "itemTitle": "京东拍卖",
+                   "itemRecommendedLanguage": "",
+                   "itemSubTitle": "臻品紫砂抢拍",
+                   "itemSubscript": ""
+               }
+           ]
+       },
+       {
+           "itemType": "type_middleBanner",
+           "module": "buyFeatures",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4681/295/1361355375/46440/b3636131/58de07c4N554b94ae.jpg!q70.jpg",
+                   "clickUrl": "会装"
+               },
+               {
+                   "imageUrl": "https://img14.360buyimg.com/da/jfs/t2638/109/3314141603/48576/92604405/57885a5eNea8a320b.jpg",
+                   "clickUrl": "脱单季"
+               }
+           ]
+       },
+        {
+           "itemType": "type_Title",
+           "module": "goShopping",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t2677/290/3439129728/9956/4d607f09/578de9fcNb59b6153.png!q70.jpg",
+                   "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png",
+                   "itemTitle": "更多热门"
+               }
+           ]
+       },
+         {
+             "itemType": "type_22",
+             "module": "goShopping",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/n1/jfs/t3622/276/660901756/68531/e5d7241b/5813f6fbN03214d2d.jpg!q70.jpg",
+                     "clickUrl": "大家电馆",
+                     "itemTitle": "大家电馆",
+                     "itemSubTitle": "白条6期免息"
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4666/290/1329628173/34033/a8e29b76/58dcdf92N5e3dff44.png!q70.jpg",
+                     "clickUrl": "母婴馆",
+                     "itemTitle": "母婴馆",
+                     "itemSubTitle": "满199减100",
+                     "itemRecommendedLanguage": ""
+                 }
+             ]
+         },
+          {
+              "itemType": "type_22",
+              "module": "goShopping",
+              "itemContentList": [
+                  {
+                      "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4246/177/3319375981/3828920/76ed6c38/58df9758Ndb750df0.jpg!q70.jpg",
+                      "clickUrl": "时尚馆",
+                      "itemTitle": "时尚馆",
+                      "itemSubTitle": "京东丝袜节"
+                  },
+                  {
+                      "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4378/235/3560807378/24770/8f222ffe/58e442e5Ndddccdae.jpg!q70.jpg",
+                      "clickUrl": "手机数码",
+                      "itemTitle": "手机数码",
+                      "itemSubTitle": "联想爆品五折秒",
+                      "itemRecommendedLanguage": ""
+                  }
+              ]
+          },
+         {
+             "itemType": "type_1111",
+             "module": "goShopping",
+             "itemContentList": [
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4285/117/3109257512/19944/1be3b538/58db634bNcdb3ec1b.jpg!q70.jpg",
+                     "clickUrl": "美食城",
+                     "itemTitle": "美食城",
+                     "itemSubTitle": "5件5折",
+                     "itemRecommendedLanguage": "",
+                     "itemBackgroundImageUrl": ""
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t5068/345/197333997/10951/544031c8/58dca172N265a12e6.jpg!q70.jpg",
+                     "clickUrl": "电脑办公",
+                     "itemTitle": "电脑办公",
+                     "itemRecommendedLanguage": "",
+                     "itemSubTitle": "每满199减80"
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4228/306/3195162999/8876/88ab9216/58db69e3N0a944318.jpg!q70.jpg",
+                     "clickUrl": "鞋靴箱包",
+                     "itemTitle": "鞋靴箱包",
+                     "itemSubTitle": "399减120",
+                     "itemSubscript": ""
+                 },
+                 {
+                     "imageUrl": "https://m.360buyimg.com/n1/jfs/t3088/300/7513997890/259901/98178f5/58b7c78cNbd0b5e05.jpg!q70.jpg",
+                     "clickUrl": "小家电馆",
+                     "itemTitle": "小家电馆",
+                     "itemRecommendedLanguage": "",
+                     "itemSubTitle": "每满199减20",
+                     "itemSubscript": ""
+                 }
+             ]
+         },
+         {
+          "itemType": "type_1111",
+          "module": "goShopping",
+          "itemContentList": [
+              {
+                  "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4333/136/3260917771/19068/b517fd1/58df8c62Na031087d.jpg!q70.jpg",
+                  "clickUrl": "生鲜馆",
+                  "itemTitle": "生鲜馆",
+                  "itemSubTitle": "满2件8折",
+                  "itemRecommendedLanguage": "",
+                  "itemBackgroundImageUrl": ""
+              },
+              {
+                  "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4570/19/1318587865/17550/8a7e8ca/58dcb5ddN186af61e.png!q70.jpg",
+                  "clickUrl": "家装城",
+                  "itemTitle": "家装城",
+                  "itemRecommendedLanguage": "",
+                  "itemSubTitle": "跨万店4免1"
+              },
+              {
+                  "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4774/324/569821243/4473/eed964ec/58e44fb4Nd8e78b24.jpg!q70.jpg",
+                  "clickUrl": "图书音像",
+                  "itemTitle": "图书音像",
+                  "itemSubTitle": "每满150减50",
+                  "itemSubscript": ""
+              },
+              {
+                  "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4600/15/1356162856/36024/b9a45109/58dcdb49N5d95b788.png!q70.jpg",
+                  "clickUrl": "中外名酒",
+                  "itemTitle": "中外名酒",
+                  "itemRecommendedLanguage": "",
+                  "itemSubTitle": "啤酒99减20",
+                  "itemSubscript": ""
+              }
+          ]
+      },
+       {
+          "itemType": "showEventFillUp",
+          "module": "goShopping",
+          "itemContentList": [
+              {
+                  "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t4951/264/204661249/84055/4a90ce74/58dce1b2Ne4c313b4.jpg!q70.jpg",
+                  "itemBackgroundImageUrl": "",
+                  "itemTitle": ""
+              }
+          ]
+      },
+       {
+           "itemType": "type_Title",
+           "module": "findGoodShop",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3262/58/5673226654/6672/fcc818b3/587c8b2bNec769cc1.png!q70.jpg",
+                   "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png",
+                   "itemTitle": "更多精彩"
+               }
+           ]
+       },
+       {
+           "itemType": "findGoodShop",
+           "module": "findGoodShop",
+           "itemContentList": [
+               {
+                    "imageUrl": "https://m.360buyimg.com/n1/jfs/t3928/47/2347634870/449069/852ae8ff/58a7e1a1N86ca1984.jpg",
+                    "clickUrl": "精选",
+                    "itemTitle": "精选",
+                    "itemSubTitle": "20家好店为你精心推荐",
+                    "itemRecommendedLanguage": "迪牛斯官方旗舰店",
+                    "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3154/346/7819339400/437339/1bb469e3/58bd294aN0b4647bd.jpg"
+               },
+               {
+                   "imageUrl": "https://m.360buyimg.com/n1/jfs/t3406/78/398725171/104821/42382f9c/5808a510N9f0ce731.jpg",
+                   "clickUrl": "手机通讯",
+                   "itemTitle": "手机通讯",
+                   "itemSubTitle": "是不是在挑手机？",
+                   "itemRecommendedLanguage": "OPPO手机官方旗舰店",
+                   "itemBackgroundImageUrl": "https://m.360buyimg.com/n1/jfs/t3982/272/122877612/84922/90018ce0/583d461fNc90d345f.jpg"
+              }
+           ]
+       },
+       {
+           "itemType": "type_Title",
+           "module": "preferredList",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3205/189/6084932005/5424/1f04049d/589a8ce3Nb18b2ded.png!q70.jpg",
+                   "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png",
+                   "itemTitle": "更多精彩"
+               }
+           ]
+       },
+      {
+          "itemType": "preferredList",
+          "module": "preferredList",
+          "itemContentList": [
+              {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/s386x386_jfs/t3319/56/113689187/94532/495500fe/57ff589dNbd14509c.jpg!q70.jpg",
+                   "clickUrl": "",
+                   "itemTitle": "爱自拍的妹子，看看这些主打拍照的手机",
+                   "itemSubTitle": "",
+                   "itemRecommendedLanguage": "",
+                   "itemBackgroundImageUrl": "https://m.360buyimg.com/mobilecms/s386x386_jfs/t3751/279/1864217108/170619/d1a6ad51/58343dc1Nbb3d4722.jpg!q70.jpg"
+              },
+              {
+                  "imageUrl": "https://m.360buyimg.com/mobilecms/s386x386_jfs/t2557/180/167363195/142166/e530d087/563af78aNa3e10f8f.jpg!q70.jpg",
+                  "clickUrl": "",
+                  "itemTitle": "舒适运动耳机，让你挥汗如雨也充满激情",
+                  "itemSubTitle": "",
+                  "itemRecommendedLanguage": "",
+                  "itemBackgroundImageUrl": "https://m.360buyimg.com/mobilecms/s386x386_jfs/t2557/180/167363195/142166/e530d087/563af78aNa3e10f8f.jpg!q70.jpg"
+             }
+          ]
+      },
+       {
+           "itemType": "type_Title",
+           "module": "live",
+           "itemContentList": [
+               {
+                   "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3772/343/1287610868/4307/19445fcc/5821896aN934a58f3.png!q70.jpg",
+                   "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png",
+                   "itemTitle": "更多精彩"
+               }
+           ]
+       },
+      {
+          "itemType": "live",
+          "module": "live",
+          "itemContentList": [
+              {
+                   "imageUrl": "https://m.360buyimg.com/live/jfs/t4636/23/1212232547/106356/931f87f0/58da4136N78e9ccb2.jpg!q70.jpg",
+                   "clickUrl": "",
+                   "itemTitle": "数码玩物",
+                   "itemSubTitle": "厉害了这款游戏机不买也要看看",
+                   "itemRecommendedLanguage": "",
+                   "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/live-icon.png"
+              },
+              {
+                  "imageUrl": "https://m.360buyimg.com/live/jfs/t4330/107/2981558919/121249/8bba7ac5/58d9c552N56063a87.jpg!q70.jpg",
+                  "clickUrl": "",
+                  "itemTitle": "彩妆",
+                  "itemSubTitle": "没有丑女人只有不会化妆的懒女人",
+                  "itemRecommendedLanguage": "",
+                  "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/live-icon.png"
+             }
+          ]
+      },{
+                  "itemType": "type_Title",
+                  "module": "recommended",
+                  "itemContentList": [
+                      {
+                          "imageUrl": "https://m.360buyimg.com/mobilecms/jfs/t3205/189/6084932005/5424/1f04049d/589a8ce3Nb18b2ded.png!q70.jpg",
+                          "itemBackgroundImageUrl": "https://st.360buyimg.com/m/images/index/floor-tit.png",
+                          "itemTitle": ""
+                      }
+                  ]
+                }
+    ]
+}

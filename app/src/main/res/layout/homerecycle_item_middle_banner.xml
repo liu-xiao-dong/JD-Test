@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sxjs.common.widget.percentlayout.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.sxjs.common.widget.autoscrollviewpager.BGABanner
+        android:id="@+id/middle_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercentScreenX="2%"
+        app:layout_marginTopPercentScreenX="2%"
+        app:layout_marginRightPercentScreenX="2%"
+        app:banner_indicatorGravity="bottom"
+        app:banner_pointContainerBackground="@color/transparent"
+        app:banner_pageChangeDuration="1200"
+        app:banner_placeholderDrawable="@drawable/bk_defalt"
+        app:banner_tipTextSize="12sp"
+        app:banner_viewAspectRatio="4.24"
+        app:banner_transitionEffect="defaultEffect" />
+</com.sxjs.common.widget.percentlayout.PercentFrameLayout>

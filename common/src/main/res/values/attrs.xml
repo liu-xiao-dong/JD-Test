@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomNavigationBar">
+        <attr name="bnbElevation" format="dimension" />
+        <attr name="bnbActiveColor" format="color" />
+        <attr name="bnbInactiveColor" format="color" />
+        <attr name="bnbBackgroundColor" format="color" />
+        <attr name="bnbAnimationDuration" format="integer" />
+        <attr name="bnbMode" format="enum">
+            <enum name="mode_default" value="0" />
+            <enum name="mode_fixed" value="1" />
+            <enum name="mode_shifting" value="2" />
+        </attr>
+        <attr name="bnbBackgroundStyle" format="enum">
+            <enum name="background_style_default" value="0" />
+            <enum name="background_style_static" value="1" />
+            <enum name="background_style_ripple" value="2" />
+        </attr>
+        <attr name="bnbAutoHideEnabled" format="boolean" />
+    </declare-styleable>
+
+    // pull to refresh =================
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+    // pull to refresh =================
+
+
+    //up down viewSwitcher================
+    <declare-styleable name="UpDownViewSwitcher">
+        <attr name="up_to_down" format="boolean" />
+        <attr name="animator_duration" format="integer" />
+        <attr name="switch_duration" format="integer" />
+        <attr name="animator_translate_distance" format="dimension" />
+    </declare-styleable>
+
+
+    //FlexboxLayout=========================
+    <declare-styleable name="FlexboxLayout">
+        <attr name="flexDirection">
+            <enum name="row" value="0" />
+            <enum name="row_reverse" value="1" />
+            <enum name="column" value="2" />
+            <enum name="column_reverse" value="3" />
+        </attr>
+
+        <attr name="flexWrap">
+            <enum name="nowrap" value="0" />
+            <enum name="wrap" value="1" />
+            <enum name="wrap_reverse" value="2" />
+        </attr>
+
+        <!--
+            Omitting flex-flow property since it's reflected in the parent flex container.
+            Set the flexDirection and/or flexWrap to the parent flex container explicitly if you
+            want to use the flex-flow similar way to the web.
+         -->
+
+        <attr name="justifyContent">
+            <enum name="flex_start" value="0" />
+            <enum name="flex_end" value="1" />
+            <enum name="center" value="2" />
+            <enum name="space_between" value="3" />
+            <enum name="space_around" value="4" />
+        </attr>
+
+        <attr name="alignItems">
+            <enum name="flex_start" value="0" />
+            <enum name="flex_end" value="1" />
+            <enum name="center" value="2" />
+            <enum name="baseline" value="3" />
+            <enum name="stretch" value="4" />
+        </attr>
+
+        <attr name="alignContent">
+            <enum name="flex_start" value="0" />
+            <enum name="flex_end" value="1" />
+            <enum name="center" value="2" />
+            <enum name="space_between" value="3" />
+            <enum name="space_around" value="4" />
+            <enum name="stretch" value="5" />
+        </attr>
+
+        <attr name="dividerDrawable" format="reference" />
+        <attr name="dividerDrawableHorizontal" format="reference" />
+        <attr name="dividerDrawableVertical" format="reference" />
+
+        <attr name="showDivider">
+            <flag name="none" value="0" />
+            <flag name="beginning" value="1" />
+            <flag name="middle" value="2" />
+            <flag name="end" value="4" />
+        </attr>
+        <attr name="showDividerHorizontal">
+            <flag name="none" value="0" />
+            <flag name="beginning" value="1" />
+            <flag name="middle" value="2" />
+            <flag name="end" value="4" />
+        </attr>
+        <attr name="showDividerVertical">
+            <flag name="none" value="0" />
+            <flag name="beginning" value="1" />
+            <flag name="middle" value="2" />
+            <flag name="end" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlexboxLayout_Layout">
+        <!-- 按数字大小排序  -->
+        <attr name="layout_order" format="integer" />
+
+        <!-- Negative numbers are invalid. 占剩余空间的比重 如果都为1 则平分-->
+        <attr name="layout_flexGrow" format="float" />
+
+        <!-- Negative numbers are invalid.  空间不足 如果都为1 都将等比例缩小 如果为0 则该item不缩小-->
+        <attr name="layout_flexShrink" format="float" />
+
+        <attr name="layout_flexBasisPercent" format="fraction" />
+
+        <!--
+            Omitting flex property since it's a shorthand for layout_flexGrow and layout_flexShrink
+            and layout_percentInParent (flex-basis in the original CSS spec).
+        -->
+
+        <attr name="layout_alignSelf">
+            <enum name="auto" value="-1" />
+            <!-- The values below need to match the values of alignItems -->
+            <enum name="flex_start" value="0" />
+            <enum name="flex_end" value="1" />
+            <enum name="center" value="2" />
+            <enum name="baseline" value="3" />
+            <enum name="stretch" value="4" />
+        </attr>
+
+        <attr name="layout_minWidth" format="dimension" />
+        <attr name="layout_minHeight" format="dimension" />
+        <attr name="layout_maxWidth" format="dimension" />
+        <attr name="layout_maxHeight" format="dimension" />
+
+        <attr name="layout_wrapBefore" format="boolean" />
+    </declare-styleable>
+    //FlexboxLayout=========================^^^
+
+    //auto scroll viewpager =====================
+    <declare-styleable name="BGABanner">
+        <!-- 指示点容器背景 -->
+        <attr name="banner_pointContainerBackground" format="reference|color" />
+        <!-- 指示点背景 -->
+        <attr name="banner_pointDrawable" format="reference" />
+        <!-- 指示点容器左右内间距 -->
+        <attr name="banner_pointContainerLeftRightPadding" format="dimension" />
+        <!-- 指示点上下外间距 -->
+        <attr name="banner_pointTopBottomMargin" format="dimension" />
+        <!-- 指示点左右外间距 -->
+        <attr name="banner_pointLeftRightMargin" format="dimension" />
+        <!-- 指示器的位置 -->
+        <attr name="banner_indicatorGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="banner_pointAutoPlayAble" format="boolean" />
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="banner_pointAutoPlayInterval" format="integer" />
+        <!-- 页码切换过程的时间长度 -->
+        <attr name="banner_pageChangeDuration" format="integer" />
+        <!-- 页面切换的动画效果 -->
+        <attr name="banner_transitionEffect" format="enum">
+            <enum name="defaultEffect" value="0" />
+            <enum name="alpha" value="1" />
+            <enum name="rotate" value="2" />
+            <enum name="cube" value="3" />
+            <enum name="flip" value="4" />
+            <enum name="accordion" value="5" />
+            <enum name="zoomFade" value="6" />
+            <enum name="fade" value="7" />
+            <enum name="zoomCenter" value="8" />
+            <enum name="zoomStack" value="9" />
+            <enum name="stack" value="10" />
+            <enum name="depth" value="11" />
+            <enum name="zoom" value="12" />
+        </attr>
+        <!-- 提示文案的文字颜色 -->
+        <attr name="banner_tipTextColor" format="reference|color" />
+        <!-- 提示文案的文字大小 -->
+        <attr name="banner_tipTextSize" format="dimension" />
+        <!-- 加载网络数据时覆盖在 BGABanner 最上层的占位图 -->
+        <attr name="banner_placeholderDrawable" format="reference" />
+        <!-- 是否是数字指示器 -->
+        <attr name="banner_isNumberIndicator" format="boolean" />
+        <!-- 数字指示器文字颜色 -->
+        <attr name="banner_numberIndicatorTextColor" format="reference|color" />
+        <!-- 数字指示器文字大小 -->
+        <attr name="banner_numberIndicatorTextSize" format="dimension" />
+        <!-- 数字指示器背景 -->
+        <attr name="banner_numberIndicatorBackground" format="reference" />
+        <!-- 当只有一页数据时是否显示指示器，默认值为 false -->
+        <attr name="banner_isNeedShowIndicatorOnOnlyOnePage" format="boolean" />
+        <!-- 自动轮播区域距离 BGABanner 底部的距离 -->
+        <attr name="banner_contentBottomMargin" format="dimension" />
+        <!-- 支持宽高显示比例 -->
+        <attr name="banner_viewAspectRatio" format="float" />
+        <!-- 占位图缩放模式 -->
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    //auto scroll viewpager =====================^^^^^^
+
+    //AspectRatioLayout=======================
+    <declare-styleable name="AspectRatioLayout">
+        <attr name="Layout_viewAspectRatio" format="float" />
+    </declare-styleable>
+
+    //percent layout attr
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="fraction" />
+        <attr name="layout_heightPercent" format="fraction" />
+        <attr name="layout_marginPercent" format="fraction" />
+        <attr name="layout_marginLeftPercentX" format="fraction" />
+        <attr name="layout_marginLeftPercentY" format="fraction" />
+        <attr name="layout_marginLeftPercentScreenX" format="fraction" />
+        <attr name="layout_marginTopPercentX" format="fraction" />
+        <attr name="layout_marginTopPercentY" format="fraction" />
+        <attr name="layout_marginTopPercentScreenX" format="fraction" />
+        <attr name="layout_marginRightPercentX" format="fraction" />
+        <attr name="layout_marginRightPercentY" format="fraction" />
+        <attr name="layout_marginRightPercentScreenX" format="fraction" />
+        <attr name="layout_marginBottomPercentX" format="fraction" />
+        <attr name="layout_marginBottomPercentY" format="fraction" />
+        <attr name="layout_marginBottomPercentScreenX" format="fraction" />
+        <attr name="layout_marginStartPercent" format="fraction" />
+        <attr name="layout_marginEndPercent" format="fraction" />
+        <attr name="layout_aspectRatio" format="fraction" />
+        <attr name="layout_selfAspectRatio" format="float" />
+        <attr name="layout_widthTextSizePercent" format="fraction" />
+        <attr name="layout_screenWidthTextSizePercent" format="fraction" />
+        <attr name="layout_heightTextSizePercent" format="fraction" />
+    </declare-styleable>
+
+</resources>
