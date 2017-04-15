@@ -1,18 +1,24 @@
 # JD-Test
 仿京东app 采用组件化架构 屏幕适配方案可以较好解决多分辨率及同分辨率不同dpi适配；
-声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
+
+### 声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
+
+
 ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/screen_home.jpg?raw=true)
 
 
 ### Specs
-[ ![Download](https://api.bintray.com/packages/aritraroy/maven/patternlockview/images/download.svg) ](https://bintray.com/aritraroy/maven/patternlockview/_latestVersion) [![API](https://img.shields.io/badge/API-14%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=14) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PatternLockView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5515)
+[  [![API](https://img.shields.io/badge/API-12%2B-blue.svg?style=flat)](https://img.shields.io/badge/API-12%2B-blue.svg?style=flat) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)]
 
 
-This library allows you to implement pattern locking mechanism in your app **easily and quickly**. It is very easy to use and there are **plenty of customization options** available to change the functionality and look-and-feel of this view to match your needs.
+本项目为仿京东项目，资源为抓包获取，项目框架采用路由框架 ARouter 进行模块间通讯，以功能模块进行划分的组件化开发 ，模块内部采用参考google开源的mvp架构 ，
+核心框架 包含 retrofit 、rxjava 、dagger2 、fresco 以及个人开源的诸多优秀项目；当然现成的轮子也有不合适的地方，在这些轮子的基础上修改以及自己造轮子组成了
+现有的项目，这套架构也是我应用与项目中的架构，后期也会不断扩展维护 ，欢迎大家提issues ，喜欢就直接拿去用 ，绝不收取任何费用（好吧 ， 想收也没人给 ^-^！） 。
+后续也会写详细的博客介绍项目内的一些重要部分供大家参考。话说一切没有gif图的项目都是耍流氓，上图：
 
-It also **supports RxJava 2 view bindings**, so if you are a fan of reactive programming (just like me), you can get a stream of updates as the user draws the pattern.
 
-![PatternLockView](https://github.com/aritraroy/PatternLockView/blob/master/screenshots/pattern_lock_view_small.gif?raw=true) ![PatternLockView](https://github.com/aritraroy/PatternLockView/blob/master/screenshots/pattern_lock_view_2_small.gif?raw=true)
+
+![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/home1.gif?raw=true) 
 
 
 # Download
