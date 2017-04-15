@@ -1,6 +1,7 @@
 # JD-Test
 仿京东app 采用组件化架构 屏幕适配方案可以较好解决多分辨率及同分辨率不同dpi适配；
-![PatternLockView](https://github.com/aritraroy/PatternLockView/blob/master/screenshots/pattern-lock-view-banner.png?raw=true)
+声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
+![PatternLockView](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/common.png?raw=true)
 
 
 ### Specs
