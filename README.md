@@ -8,7 +8,7 @@
 
 
 ### Specs
-[  [![API](https://img.shields.io/badge/API-12%2B-blue.svg?style=flat)](https://img.shields.io/badge/API-12%2B-blue.svg?style=flat) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)]
+  [![API](https://img.shields.io/badge/API-12%2B-blue.svg?style=flat)](https://img.shields.io/badge/API-12%2B-blue.svg?style=flat) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
 本项目为仿京东项目，资源为抓包获取，项目框架采用路由框架 ARouter 进行模块间通讯，以功能模块进行划分的组件化开发 ，模块内部采用参考google开源的mvp架构 ，
@@ -21,7 +21,12 @@
 ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/home1.gif?raw=true) 
 
 
-# Download
+***
+再来几张非主流分辨率截图
+
+![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/first.png?raw=true) ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/second.png?raw=true)  
+![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/third.png?raw=true) ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/480x854.png?raw=true) 
+
 
 This library is available in **jCenter** which is the default Maven repository used in Android Studio.
 
