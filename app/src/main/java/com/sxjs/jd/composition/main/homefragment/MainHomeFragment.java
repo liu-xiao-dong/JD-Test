@@ -111,36 +111,36 @@ public class MainHomeFragment extends BaseFragment implements JDHeaderView.Refre
             }
         });
         adapter = new HomeMultipleRecycleAdapter();
-        recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+        /*recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 switch (newState){
                     //滑动停止
                     case RecyclerView.SCROLL_STATE_IDLE:
-                        adapter.setFilling(false);
+
                         break;
                     //手指触摸屏幕停止或拖动时
                     case RecyclerView.SCROLL_STATE_DRAGGING:
-                        adapter.setFilling(false);
+
                         break;
                     //滑动且手指离开屏幕
                     case RecyclerView.SCROLL_STATE_SETTLING:
-                        adapter.setFilling(true);
+
                         break;
                 }
 
             }
-        });
+        });*/
 
-        recyclerView.setOnFlingListener(new RecyclerView.OnFlingListener() {
+        /*recyclerView.setOnFlingListener(new RecyclerView.OnFlingListener() {
             @Override
             public boolean onFling(int velocityX, int velocityY) {
                 if(Math.abs(velocityY) > 5000){
-                    adapter.setFilling(true);
+
                 }
                 return false;
             }
-        });
+        });*/
         adapter.setOnLoadMoreListener(this);
         adapter.setEnableLoadMore(true);
         adapter.setListener(this);
