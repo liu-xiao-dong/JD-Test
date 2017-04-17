@@ -4,7 +4,7 @@
 ### 声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
 
 ### apk安装 ：
-[https://github.com/liu-xiao-dong/JD-Test/tree/master/app/](https://github.com/liu-xiao-dong/JD-Test/tree/master/app)  
+[https://github.com/liu-xiao-dong/JD-Test/raw/master/app/app-release.apk](https://github.com/liu-xiao-dong/JD-Test/raw/master/app/app-release.apk)  
 
 
 

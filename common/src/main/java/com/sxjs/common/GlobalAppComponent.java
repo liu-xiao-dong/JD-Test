@@ -15,9 +15,11 @@ public class GlobalAppComponent {
      * @param context applicationContext
      */
     public static void init(Context context){
-        mAppComponent = DaggerAppComponent.builder()
-                .applicationModule(new ApplicationModule(context.getApplicationContext()))
-                .build();
+        if(mAppComponent == null){
+            mAppComponent = DaggerAppComponent.builder()
+                    .applicationModule(new ApplicationModule(context.getApplicationContext()))
+                    .build();
+        }
     }
 
     public static AppComponent getAppComponent() {

@@ -231,6 +231,10 @@ public class MainHomeFragment extends BaseFragment implements JDHeaderView.Refre
         adapter.loadMoreComplete();
     }
 
+    /**
+     * 当前recyclerView 的position的回调
+     * @param position
+     */
     @Override
     public void currentPosition(int position) {
 
