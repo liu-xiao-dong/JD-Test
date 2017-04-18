@@ -132,4 +132,23 @@
             android:background="@drawable/no_solid_corners_gray_shape"
             />
     </com.sxjs.common.widget.flexboxlayout.FlexboxLayout>
+
+    <com.sxjs.common.widget.imageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:fadeDuration="300"
+        app:backgroundImage="@drawable/cat"
+        />
+
+    <com.sxjs.common.widget.imageview.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:resId="@drawable/timg"
+        />
+    <com.sxjs.common.widget.imageview.ExpandImageView
+        android:id="@+id/expand_img"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        app:actualImageResource="@drawable/pic"
+        />
 </LinearLayout>

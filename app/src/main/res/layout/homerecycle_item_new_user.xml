@@ -7,7 +7,7 @@
     android:layout_marginBottom="5dp"
     >
 
-    <com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFramLayout
+    <com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:Layout_viewAspectRatio="1.95">
@@ -46,7 +46,7 @@
                 app:viewAspectRatio="2.74"
                 />
         </com.sxjs.common.widget.percentlayout.PercentRelativeLayout>
-    </com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFramLayout>
+    </com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFrameLayout>
     <com.sxjs.common.widget.imageview.ExpandImageView
         android:id="@+id/new_user_packs"
         android:layout_width="match_parent"

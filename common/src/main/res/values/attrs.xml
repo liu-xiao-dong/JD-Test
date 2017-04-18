@@ -260,4 +260,9 @@
         <attr name="layout_heightTextSizePercent" format="fraction" />
     </declare-styleable>
 
+    //GifImageView=======================
+    <declare-styleable name="GifImageView">
+        <attr name="resId" format="reference" />
+    </declare-styleable>
+
 </resources>

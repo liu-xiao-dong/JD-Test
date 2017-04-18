@@ -13,7 +13,7 @@ import com.sxjs.common.widget.autoscrollviewpager.BannerAspectRatioMeasure;
  * @author：admin on 2017/3/29 11:54.
  */
 
-public class AspectRatioFramLayout extends FrameLayout{
+public class AspectRatioFrameLayout extends FrameLayout{
 
     /**
      * 纵横比测量
@@ -24,15 +24,15 @@ public class AspectRatioFramLayout extends FrameLayout{
      */
     private float mAspectRatio = 0;
 
-    public AspectRatioFramLayout(Context context) {
+    public AspectRatioFrameLayout(Context context) {
         this(context,null);
     }
 
-    public AspectRatioFramLayout(Context context, @Nullable AttributeSet attrs) {
+    public AspectRatioFrameLayout(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs,0);
     }
 
-    public AspectRatioFramLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public AspectRatioFrameLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initCustomAttrs(context, attrs);
     }

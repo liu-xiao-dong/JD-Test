@@ -8,7 +8,7 @@ import android.content.Context;
  */
 
 public class GlobalAppComponent {
-    private static AppComponent mAppComponent;
+    private volatile static AppComponent mAppComponent;
 
     /**
      * 初始化全局AppComponent
@@ -16,13 +16,20 @@ public class GlobalAppComponent {
      */
     public static void init(Context context){
         if(mAppComponent == null){
-            mAppComponent = DaggerAppComponent.builder()
-                    .applicationModule(new ApplicationModule(context.getApplicationContext()))
-                    .build();
+            synchronized (GlobalAppComponent.class){
+                if(mAppComponent == null){
+                    mAppComponent = DaggerAppComponent.builder()
+                            .applicationModule(new ApplicationModule(context.getApplicationContext()))
+                            .build();
+                }
+            }
         }
     }
 
     public static AppComponent getAppComponent() {
+        if(mAppComponent == null){
+            throw (new NullPointerException("GlobalAppComponent必须在application中进行init初始化"));
+        }
         return mAppComponent;
     }
 }

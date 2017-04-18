@@ -9,9 +9,12 @@ import android.view.View;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.sxjs.common.base.BaseActivity;
+import com.sxjs.common.util.ImageLoaderUtil;
+import com.sxjs.common.widget.imageview.ExpandImageView;
 
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pub.devrel.easypermissions.AfterPermissionGranted;
@@ -20,11 +23,13 @@ import pub.devrel.easypermissions.EasyPermissions;
 /**
  * 22@author：admin on 2017/4/10 14:50.
  */
-@Route(path = "/test/activity")
+@Route(path = "/test1/activity")
 public class TestActivity extends BaseActivity implements View.OnClickListener, EasyPermissions.PermissionCallbacks {
 
 
     private static final int RC_CAMERA_AND_LOCATION = 123;
+    @BindView(R2.id.expand_img)
+    ExpandImageView expandImg;
 
 
     @Override
@@ -32,6 +37,9 @@ public class TestActivity extends BaseActivity implements View.OnClickListener, 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test_activity);
         unbinder = ButterKnife.bind(this);
+        ImageLoaderUtil.getInstance(expandImg)
+                .setOverlayImage(getResources().getDrawable(R.drawable.over))
+                .setRoundingParams(10);
 
     }
 
@@ -69,13 +77,14 @@ public class TestActivity extends BaseActivity implements View.OnClickListener, 
 
     /**
      * 运行时id会和编译时id发生变化 所以运行时判断必须用R.id
+     *
      * @param view
      */
     @OnClick({R2.id.show_toast, R2.id.clear_cache})
     public void onClick(View view) {
-        if(view.getId() == R.id.show_toast){
+        if (view.getId() == R.id.show_toast) {
             testPermissionRequest();
-        }else if(view.getId() == R.id.clear_cache){
+        } else if (view.getId() == R.id.clear_cache) {
             Fresco.getImagePipeline().clearDiskCaches();
             showShortToast("缓存已清理");
         }

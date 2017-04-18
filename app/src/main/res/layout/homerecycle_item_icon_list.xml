@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFramLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:Layout_viewAspectRatio="2.5">
+<com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                                   android:layout_width="match_parent"
+                                                                   android:layout_height="wrap_content"
+                                                                   app:Layout_viewAspectRatio="2.5">
     <com.sxjs.common.widget.imageview.ExpandImageView
         android:id="@+id/icon_list_bg"
         android:layout_width="match_parent"
@@ -289,4 +289,4 @@
             android:layout_height="wrap_content"
             app:layout_heightPercent="6%" />
     </com.sxjs.common.widget.percentlayout.PercentLinearLayout>
-</com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFramLayout>
+</com.sxjs.common.widget.aspect_ratio_layout.AspectRatioFrameLayout>

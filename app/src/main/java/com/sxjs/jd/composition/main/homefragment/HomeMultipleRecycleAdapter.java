@@ -463,7 +463,7 @@ public class HomeMultipleRecycleAdapter extends BaseMultiItemQuickAdapter<HomeIn
     public boolean onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
         switch (view.getId()) {
             case R.id.icon_list_one:
-                ARouter.getInstance().build("/test/activity").navigation(view.getContext());
+                ARouter.getInstance().build("/test1/activity").navigation(view.getContext());
                 break;
         }
         return false;
