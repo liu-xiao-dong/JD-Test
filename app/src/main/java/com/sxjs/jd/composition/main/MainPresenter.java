@@ -2,8 +2,8 @@ package com.sxjs.jd.composition.main;
 
 import android.util.Log;
 
+import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
 import com.sxjs.common.model.DataManager;
-import com.sxjs.common.model.http.NoNetWorkException;
 import com.sxjs.jd.composition.BasePresenter;
 
 import java.io.IOException;
@@ -13,7 +13,6 @@ import java.util.Map;
 import javax.inject.Inject;
 
 import io.reactivex.disposables.Disposable;
-import io.reactivex.observers.DisposableObserver;
 import okhttp3.ResponseBody;
 
 /**
@@ -37,26 +36,26 @@ public class MainPresenter extends BasePresenter implements MainContract.Present
     @Override
     public void getText() {
         mMainView.showProgressDialogView();
-        Disposable disposable = mDataManager.getMainData(0, 10, new DisposableObserver<ResponseBody>() {
+        Disposable disposable = mDataManager.getMainData(0, 10, new ErrorDisposableObserver<ResponseBody>() {
             @Override
             public void onNext(ResponseBody responseBody) {
+                Log.e(TAG, "onNext: " );
                 try {
                     mMainView.setText(responseBody.string());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-
+            //如果需要发生Error时操作UI可以重写onError，统一错误操作可以在ErrorDisposableObserver中统一执行
             @Override
             public void onError(Throwable e) {
-                if(e instanceof NoNetWorkException){
-                    Log.e(TAG, "onError: "+e.getCause());
-                }
+                super.onError(e);
                 mMainView.hiddenProgressDialogView();
             }
 
             @Override
             public void onComplete() {
+                Log.e(TAG, "onComplete: " );
                 mMainView.hiddenProgressDialogView();
             }
         });

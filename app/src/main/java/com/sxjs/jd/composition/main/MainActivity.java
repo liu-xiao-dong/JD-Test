@@ -107,7 +107,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Bot
 
 
     public void initData() {
-
+        presenter.getText();
     }
 
     private String text;
