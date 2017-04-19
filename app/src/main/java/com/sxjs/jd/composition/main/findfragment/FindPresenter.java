@@ -1,5 +1,6 @@
 package com.sxjs.jd.composition.main.findfragment;
 
+import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
 import com.sxjs.jd.entities.FindsBean;
 import com.sxjs.common.model.DataManager;
 import com.sxjs.jd.composition.BasePresenter;
@@ -26,15 +27,10 @@ public class FindPresenter extends BasePresenter implements FindContract.Present
 
     @Override
     public void getFindData() {
-        addDisposabe(mDataManager.getData(new DisposableObserver<FindsBean>() {
+        addDisposabe(mDataManager.getData(new ErrorDisposableObserver<FindsBean>() {
             @Override
             public void onNext(FindsBean findsBean) {
                 mFindView.setFindData(findsBean);
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
             }
 
             @Override

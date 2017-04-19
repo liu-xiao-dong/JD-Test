@@ -48,7 +48,8 @@
         <meta-data
             android:name="BUGLY_ENABLE_DEBUG"
             android:value="true" />
-
+        //支持超过16:9的纵横比设备
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
     </application>
 
 </manifest>

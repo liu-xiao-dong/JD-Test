@@ -70,7 +70,7 @@
     </com.sxjs.common.widget.flexboxlayout.FlexboxLayout>
 
     <com.sxjs.common.widget.flexboxlayout.FlexboxLayout
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="5dp"
         android:background="@color/white"
         app:flexWrap="wrap"
         app:alignItems="center"
@@ -84,7 +84,7 @@
             android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="showCustomToast"
+            android:text="动态获取权限测试"
             android:background="@drawable/no_solid_corners_gray_shape"
             />
         <TextView
@@ -102,35 +102,7 @@
             android:text="中国"
             android:background="@drawable/no_solid_corners_gray_shape"
             />
-        <TextView
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="我是地"
-            android:background="@drawable/no_solid_corners_gray_shape"
-            />
-        <TextView
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="快乐的活神仙"
-            android:background="@drawable/no_solid_corners_gray_shape"
-            />
-        <TextView
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="快乐的活神仙"
-            android:background="@drawable/no_solid_corners_gray_shape"
-            />
-        <TextView
 
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="快乐的活神仙活神仙"
-            android:background="@drawable/no_solid_corners_gray_shape"
-            />
     </com.sxjs.common.widget.flexboxlayout.FlexboxLayout>
 
     <com.sxjs.common.widget.imageview.CircleImageView

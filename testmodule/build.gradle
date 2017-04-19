@@ -1,4 +1,9 @@
-apply plugin: 'com.android.library'
+println isBuildModule.toBoolean()
+if (isBuildModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion 25
@@ -27,6 +32,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            if (isBuildModule.toBoolean()) {
+                manifest.srcFile "src/main/debug/AndroidManifest.xml"
+                java.srcDirs += "src/main/debug/java/";
+            } else {
+                manifest.srcFile "src/main/release/AndroidManifest.xml"
+                java.srcDirs += "src/main/release/java/";
+            }
+        }
+    }
+    //resourcePrefix "testmodule_"
 }
 
 dependencies {

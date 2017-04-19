@@ -83,6 +83,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         }else if(!loadingDialog.isShowing()){
             loadingDialog.show();
         }
+
     }
 
     protected void hiddenProgressDialog(){

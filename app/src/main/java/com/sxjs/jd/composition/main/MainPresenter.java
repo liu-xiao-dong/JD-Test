@@ -39,7 +39,6 @@ public class MainPresenter extends BasePresenter implements MainContract.Present
         Disposable disposable = mDataManager.getMainData(0, 10, new ErrorDisposableObserver<ResponseBody>() {
             @Override
             public void onNext(ResponseBody responseBody) {
-                Log.e(TAG, "onNext: " );
                 try {
                     mMainView.setText(responseBody.string());
                 } catch (IOException e) {

@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity implements MainContract.View, Bot
         setContentView(R.layout.activity_main);
         unbinder = ButterKnife.bind(this);
         mFragmentManager = getSupportFragmentManager();
-
         initView();
         initData();
 

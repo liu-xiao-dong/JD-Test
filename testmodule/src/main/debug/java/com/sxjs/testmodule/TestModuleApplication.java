@@ -1,19 +1,18 @@
-package com.sxjs.jd;
+package com.sxjs.testmodule;
 
 import android.app.Application;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.facebook.imagepipeline.core.ImagePipeline;
 import com.squareup.leakcanary.LeakCanary;
 import com.sxjs.common.CommonConfig;
 import com.sxjs.common.GlobalAppComponent;
 
 /**
- * @author admin
+ * @author：admin on 2017/4/19 16:03.
  */
-public class MyApplication extends Application {
 
+public class TestModuleApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
@@ -31,18 +30,4 @@ public class MyApplication extends Application {
         Fresco.initialize(this);
         GlobalAppComponent.init(this);
     }
-
-
-    @Override
-    public void onTrimMemory(int level) {
-        super.onTrimMemory(level);
-    }
-
-    @Override
-    public void onLowMemory() {
-        super.onLowMemory();
-        ImagePipeline imagePipeline = Fresco.getImagePipeline();
-        imagePipeline.clearMemoryCaches();
-    }
-
 }
