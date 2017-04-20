@@ -4,7 +4,7 @@
 ### 声明 ： 本项目资源采用抓包获取，仅供学习交流使用 。
 
 
-[![文档链接](http://blog.csdn.net/lxd_android?viewmode=contents)](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/button.png?raw=true)
+[![文档链接](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/button.png?raw=true)](http://blog.csdn.net/lxd_android?viewmode=contents)
 
 
 ### apk安装 ：
