@@ -24,7 +24,7 @@ import com.sxjs.jd.entities.HomeIndex;
 
 
 /**
- * @author admin
+ * @author admin 数据绑定未进行详细的数据验证，再实际使用中不可取
  */
 public class HomeMultipleRecycleAdapter extends BaseMultiItemQuickAdapter<HomeIndex.ItemInfoListBean, BaseViewHolder> implements BaseQuickAdapter.SpanSizeLookup, BaseQuickAdapter.OnItemChildClickListener {
 
@@ -65,6 +65,12 @@ public class HomeMultipleRecycleAdapter extends BaseMultiItemQuickAdapter<HomeIn
         addItemType(Constant.TYPE_RECOMMENDED_WARE, R.layout.homerecycle_item_type_recommented_ware);
     }
 
+    /**
+     * 数据绑定未进行详细的数据验证，在实际使用中不可取
+     * @param helper A fully initialized helper.
+     * @param item   The item that needs to be displayed.
+     * @param position
+     */
     @Override
     protected void convert(BaseViewHolder helper, HomeIndex.ItemInfoListBean item, int position) {
         if (listener != null) {

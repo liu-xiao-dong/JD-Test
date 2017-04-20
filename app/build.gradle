@@ -20,6 +20,11 @@ android {
                 arguments = [ moduleName : project.getName() ]
             }
         }
+
+        lintOptions{
+            checkReleaseBuilds false
+            abortOnError false
+        }
         //此风味是为了使用Instant Run
         /*productFlavors {
             dev {

@@ -213,6 +213,10 @@ public class MainHomeFragment extends BaseFragment implements JDHeaderView.Refre
 
     @Override
     public void setHomeIndexData(HomeIndex homeIndex) {
+        if(homeIndex == null){
+            mPtrFrame.refreshComplete();
+            return;
+        }
         adapter.getData().clear();
         adapter.resetMaxHasLoadPosition();
         adapter.setNewData(homeIndex.itemInfoList);

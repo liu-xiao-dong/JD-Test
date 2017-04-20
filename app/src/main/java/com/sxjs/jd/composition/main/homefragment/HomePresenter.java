@@ -2,6 +2,7 @@ package com.sxjs.jd.composition.main.homefragment;
 
 import android.util.Log;
 
+import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
 import com.sxjs.common.model.DataManager;
 import com.sxjs.jd.composition.BasePresenter;
 import com.sxjs.jd.entities.HomeIndex;
@@ -27,7 +28,7 @@ public class HomePresenter extends BasePresenter implements HomeContract.Present
 
     @Override
     public void getHomeIndexData(int flag) {
-        addDisposabe(mDataManager.getData(new DisposableObserver<HomeIndex>() {
+        addDisposabe(mDataManager.getData(new ErrorDisposableObserver<HomeIndex>() {
             @Override
             public void onNext(HomeIndex homeIndex) {
                 mHomeView.setHomeIndexData(homeIndex);
@@ -35,12 +36,12 @@ public class HomePresenter extends BasePresenter implements HomeContract.Present
 
             @Override
             public void onError(Throwable e) {
-
+                Log.e("TAG", "onError: "+e );
+                mHomeView.setHomeIndexData(null);
             }
 
             @Override
             public void onComplete() {
-
             }
         },HomeIndex.class, flag == 1 ?"homeindex.txt" : "homeindexevent.txt"));
     }
