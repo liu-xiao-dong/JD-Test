@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:3.0.0'
         classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -14,6 +14,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         jcenter()
         maven { url "https://jitpack.io"}
         maven {
@@ -29,14 +30,14 @@ task clean(type: Delete) {
 
 ext {
     // Sdk and tools
-    minSdkVersion = 12
+    minSdkVersion = 14
     targetSdkVersion = 25
-    compileSdkVersion = 25
-    buildToolsVersion = '25.0.2'
+    compileSdkVersion = 26
+    buildToolsVersion = '26.0.2'
 
     // App dependencies
-    supportLibraryVersion = '25.2.0'
-    constraintVersion = '1.0.0-beta5'
+    supportLibraryVersion = '26.1.0'
+    constraintVersion = '1.1.0'
     junitVersion = '4.12'
     retrofitVersion = '2.2.0'
     okhttpVersion = '3.6.0'
