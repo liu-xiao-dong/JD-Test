@@ -8,10 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.sxjs.common.GlobalAppComponent;
 import com.sxjs.common.base.baseadapter.BaseQuickAdapter;
 import com.sxjs.common.widget.headerview.JDHeaderView;
 import com.sxjs.common.widget.pulltorefresh.PtrFrameLayout;
 import com.sxjs.common.widget.pulltorefresh.PtrHandler;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.R;
 import com.sxjs.common.base.BaseFragment;
 import com.sxjs.jd.entities.FindsBean;
@@ -52,7 +54,7 @@ public class FindFragment extends BaseFragment implements FindContract.View, Ptr
 
         DaggerFindFragmentComponent.builder()
                 .appComponent(getAppComponent())
-                .findPresenterModule(new FindPresenterModule(this))
+                .findPresenterModule(new FindPresenterModule(this, MainDataManager.getInstance(mDataManager)))
                 .build()
                 .inject(this);
 

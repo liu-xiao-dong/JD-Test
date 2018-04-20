@@ -1,9 +1,9 @@
 package com.sxjs.jd.composition.main.findfragment;
 
 import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
-import com.sxjs.jd.entities.FindsBean;
-import com.sxjs.common.model.DataManager;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.composition.BasePresenter;
+import com.sxjs.jd.entities.FindsBean;
 
 import javax.inject.Inject;
 
@@ -14,11 +14,11 @@ import io.reactivex.observers.DisposableObserver;
  */
 
 public class FindPresenter extends BasePresenter implements FindContract.Presenter{
-    private DataManager mDataManager;
+    private MainDataManager mDataManager;
 
     private FindContract.View mFindView;
     @Inject
-    public FindPresenter(DataManager mDataManager, FindContract.View view) {
+    public FindPresenter(MainDataManager mDataManager, FindContract.View view) {
         this.mDataManager = mDataManager;
         this.mFindView = view;
 

@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.sxjs.common.AppComponent;
 import com.sxjs.common.GlobalAppComponent;
+import com.sxjs.common.model.DataManager;
 import com.sxjs.common.util.DialogUtil;
 
 import butterknife.Unbinder;
@@ -20,6 +21,8 @@ public class BaseFragment extends Fragment{
     protected Activity mActivity;
     protected Unbinder unbinder;
     protected Context mContext;
+
+    protected DataManager mDataManager;
     /**
      * gif_logo进度dialog
      */
@@ -30,6 +33,7 @@ public class BaseFragment extends Fragment{
         super.onAttach(activity);
         mActivity = activity;
         mContext = getAppComponent().getContext();
+        mDataManager = getAppComponent().getDataManager();
     }
 
     protected void showShortToast(String message){

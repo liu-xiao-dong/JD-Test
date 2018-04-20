@@ -1,5 +1,7 @@
 package com.sxjs.jd.composition.main.homefragment;
 
+import com.sxjs.jd.MainDataManager;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -10,12 +12,19 @@ import dagger.Provides;
 public class HomePresenterModule {
     private HomeContract.View view;
 
-    public HomePresenterModule(HomeContract.View  view) {
+    private MainDataManager mainDataManager;
+
+    public HomePresenterModule(HomeContract.View  view, MainDataManager mainDataManager) {
         this.view = view;
+        this.mainDataManager = mainDataManager;
     }
 
     @Provides
     HomeContract.View providerMainContractView(){
         return view;
+    }
+    @Provides
+    MainDataManager providerMainDataManager(){
+        return mainDataManager;
     }
 }

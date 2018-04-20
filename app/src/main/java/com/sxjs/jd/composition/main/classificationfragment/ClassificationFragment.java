@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.sxjs.common.base.baseadapter.BaseQuickAdapter;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.R;
 import com.sxjs.common.base.BaseFragment;
 
@@ -58,7 +59,7 @@ public class ClassificationFragment extends BaseFragment implements Classificati
 
         DaggerClassificationFragmentComponent.builder()
                 .appComponent(getAppComponent())
-                .classificationPresenterModule(new ClassificationPresenterModule(this))
+                .classificationPresenterModule(new ClassificationPresenterModule(this, MainDataManager.getInstance(mDataManager)))
                 .build()
                 .inject(this);
         typeOfGoodsNameView.setLayoutManager(new LinearLayoutManager(mActivity,LinearLayoutManager.VERTICAL,false));

@@ -3,7 +3,7 @@ package com.sxjs.jd.composition.main.homefragment;
 import android.util.Log;
 
 import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
-import com.sxjs.common.model.DataManager;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.composition.BasePresenter;
 import com.sxjs.jd.entities.HomeIndex;
 
@@ -16,11 +16,11 @@ import io.reactivex.observers.DisposableObserver;
  */
 
 public class HomePresenter extends BasePresenter implements HomeContract.Presenter{
-    private DataManager mDataManager;
+    private MainDataManager mDataManager;
 
     private HomeContract.View mHomeView;
     @Inject
-    public HomePresenter(DataManager mDataManager, HomeContract.View view) {
+    public HomePresenter(MainDataManager mDataManager, HomeContract.View view) {
         this.mDataManager = mDataManager;
         this.mHomeView = view;
 

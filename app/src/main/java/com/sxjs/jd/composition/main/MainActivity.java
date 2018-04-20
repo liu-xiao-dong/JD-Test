@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import com.sxjs.common.widget.bottomnavigation.BadgeItem;
 import com.sxjs.common.widget.bottomnavigation.BottomNavigationBar;
 import com.sxjs.common.widget.bottomnavigation.BottomNavigationItem;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.R;
 import com.sxjs.common.base.BaseActivity;
 import com.sxjs.jd.composition.main.classificationfragment.ClassificationFragment;
@@ -69,7 +70,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Bot
 
         DaggerMainActivityComponent.builder()
                 .appComponent(getAppComponent())
-                .mainPresenterModule(new MainPresenterModule(this))
+                .mainPresenterModule(new MainPresenterModule(this, MainDataManager.getInstance(mDataManager)))
                 .build()
                 .inject(this);
         initBottomNavigation();

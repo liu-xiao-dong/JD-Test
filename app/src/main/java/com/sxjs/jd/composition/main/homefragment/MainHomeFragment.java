@@ -15,6 +15,7 @@ import com.sxjs.common.util.ScreenUtil;
 import com.sxjs.common.widget.headerview.JDHeaderView;
 import com.sxjs.common.widget.pulltorefresh.PtrFrameLayout;
 import com.sxjs.common.widget.pulltorefresh.PtrHandler;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.R;
 import com.sxjs.common.base.BaseFragment;
 import com.sxjs.jd.entities.HomeIndex;
@@ -73,7 +74,7 @@ public class MainHomeFragment extends BaseFragment implements JDHeaderView.Refre
     private void initBase() {
         DaggerHomeFragmentComponent.builder()
                 .appComponent(getAppComponent())
-                .homePresenterModule(new HomePresenterModule(this))
+                .homePresenterModule(new HomePresenterModule(this, MainDataManager.getInstance(mDataManager)))
                 .build()
                 .inject(this);
 
@@ -111,36 +112,7 @@ public class MainHomeFragment extends BaseFragment implements JDHeaderView.Refre
             }
         });
         adapter = new HomeMultipleRecycleAdapter();
-        /*recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                switch (newState){
-                    //滑动停止
-                    case RecyclerView.SCROLL_STATE_IDLE:
 
-                        break;
-                    //手指触摸屏幕停止或拖动时
-                    case RecyclerView.SCROLL_STATE_DRAGGING:
-
-                        break;
-                    //滑动且手指离开屏幕
-                    case RecyclerView.SCROLL_STATE_SETTLING:
-
-                        break;
-                }
-
-            }
-        });*/
-
-        /*recyclerView.setOnFlingListener(new RecyclerView.OnFlingListener() {
-            @Override
-            public boolean onFling(int velocityX, int velocityY) {
-                if(Math.abs(velocityY) > 5000){
-
-                }
-                return false;
-            }
-        });*/
         adapter.setOnLoadMoreListener(this);
         adapter.setEnableLoadMore(true);
         adapter.setListener(this);

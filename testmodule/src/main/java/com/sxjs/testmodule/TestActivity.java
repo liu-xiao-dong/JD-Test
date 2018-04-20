@@ -9,6 +9,7 @@ import android.view.View;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.sxjs.common.base.BaseActivity;
+import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
 import com.sxjs.common.util.ImageLoaderUtil;
 import com.sxjs.common.widget.imageview.ExpandImageView;
 
@@ -17,6 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import okhttp3.ResponseBody;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -87,5 +89,22 @@ public class TestActivity extends BaseActivity implements View.OnClickListener, 
             Fresco.getImagePipeline().clearDiskCaches();
             showShortToast("缓存已清理");
         }
+    }
+
+    /**
+     * 演示各module访问网络示例
+     */
+    private void getTestData(){
+        addDisposable(TestDataManager.getInstance(mDataManager).testData(new ErrorDisposableObserver<ResponseBody>() {
+            @Override
+            public void onNext(ResponseBody responseBody) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        },"xxx","xxx"));
     }
 }

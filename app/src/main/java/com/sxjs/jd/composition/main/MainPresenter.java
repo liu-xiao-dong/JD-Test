@@ -3,7 +3,7 @@ package com.sxjs.jd.composition.main;
 import android.util.Log;
 
 import com.sxjs.common.base.rxjava.ErrorDisposableObserver;
-import com.sxjs.common.model.DataManager;
+import com.sxjs.jd.MainDataManager;
 import com.sxjs.jd.composition.BasePresenter;
 
 import java.io.IOException;
@@ -20,13 +20,13 @@ import okhttp3.ResponseBody;
 */
 
 public class MainPresenter extends BasePresenter implements MainContract.Presenter{
-    private DataManager mDataManager;
+    private MainDataManager mDataManager;
 
     private MainContract.View mMainView;
     private static final String TAG = "MainPresenter";
 
     @Inject
-    public MainPresenter(DataManager mDataManager, MainContract.View view) {
+    public MainPresenter(MainDataManager mDataManager, MainContract.View view) {
         this.mDataManager = mDataManager;
         this.mMainView = view;
 
