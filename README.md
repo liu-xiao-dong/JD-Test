@@ -9,7 +9,7 @@
 
 
 ### apk安装 ：
-[https://github.com/liu-xiao-dong/JD-Test/raw/master/app/app-release.apk](https://github.com/liu-xiao-dong/JD-Test/raw/master/app/app-release.apk)  
+[https://github.com/liu-xiao-dong/JD-Test/raw/master/app/release/app-release.apk](https://github.com/liu-xiao-dong/JD-Test/raw/master/app/app-release.apk)
 
 
 
@@ -37,15 +37,19 @@
 ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/third.png?raw=true) ![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/480x854.png?raw=true) 
 
 
-不管是什么样的分辨率都会按 “比例” 显示，重点就是比例 ，根布局自定义后支持宽高比 ，而内部使用google开源的百分比库。百分比库也需要进行自定义支持占屏幕宽度百分比，
-textsize也支持以屏幕宽度为基础的百分比定义，此处借鉴张鸿洋大神的自定义百分比库，具体也可参考项目内的自定义layout。
+项目架构如下图：
+
+#旧的架构
+![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/structer.png?raw=true)
+
+#最新架构 
+![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/structer.jpg?raw=true) 
 
 
-除了屏幕适配以外，项目架构如下图：
-
-![JD-Test](https://github.com/liu-xiao-dong/JD-Test/blob/master/screenshot/structer.png?raw=true) 
-
-
+架构相关：app只作为壳存在，除了包含MyApplication、SplashActivity及跳往其它module的测试页面，不包含任何其它逻辑
+功能模块之前跳转还是通过ARouter,模块间服务接口暴露与app_common中，使用服务的模块通过ARouter获取服务，模块之间完全解
+耦；各模块中有xxxModule类，主要承担应用启动时的初始化，也是通过ARouter获取调用；本次架构主要由ARouter承担大部分功能实现
+再次跪谢！在项目build.gradle中配置需要参与编译的模块；具体使用见源码！
 
 ## 项目持续更新中...  感兴趣就star
 
