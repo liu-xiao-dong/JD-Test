@@ -15,7 +15,6 @@ import com.alibaba.android.arouter.facade.service.DegradeService;
 public class DegradeServiceImpl implements DegradeService {
     @Override
     public void onLost(Context context, Postcard postcard) {
-        Toast.makeText(context, "该功能暂不可用", Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -4,19 +4,23 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
-        applicationId "com.sxjs.jd"
+        applicationId "com.sxjs.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
             }
         }
 
+        def isBuildAll = (buildMain as boolean) && (buildTest as boolean)
+
+        buildConfigField 'boolean','DEBUG_ALL',isBuildAll.toString()
         lintOptions{
             checkReleaseBuilds false
             abortOnError false
@@ -58,18 +62,16 @@ dependencies {
     androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     compile "com.android.support.constraint:constraint-layout:$rootProject.constraintVersion"
     testCompile "junit:junit:$rootProject.junitVersion"
-
-    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
-    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
-
-    if (!isBuildModule.toBoolean()) {
-        compile project(':testmodule')
-    } else {
-        compile project(':common')
+    compile "com.alibaba:arouter-api:$rootProject.arouterVersion"
+    if(project.buildMain as boolean){
+        implementation project(':main')
     }
 
+    if(project.buildTest as boolean){
+        implementation project(':testmodule')
+    }
+    api project(':app_common')
 }

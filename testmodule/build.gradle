@@ -1,9 +1,5 @@
-println isBuildModule.toBoolean()
-if (isBuildModule.toBoolean()) {
-    apply plugin: 'com.android.application'
-} else {
-    apply plugin: 'com.android.library'
-}
+apply plugin: 'com.android.library'
+
 apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -19,7 +15,7 @@ android {
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
             }
         }
     }
@@ -33,17 +29,6 @@ android {
         }
     }
 
-    sourceSets {
-        main {
-            if (isBuildModule.toBoolean()) {
-                manifest.srcFile "src/main/debug/AndroidManifest.xml"
-                java.srcDirs += "src/main/debug/java/";
-            } else {
-                manifest.srcFile "src/main/release/AndroidManifest.xml"
-                java.srcDirs += "src/main/release/java/";
-            }
-        }
-    }
     resourcePrefix "testmodule_"
 }
 
@@ -54,7 +39,7 @@ dependencies {
     })
     compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     testCompile "junit:junit:$rootProject.junitVersion"
-    compile project(':common')
+    compile project(':app_common')
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"

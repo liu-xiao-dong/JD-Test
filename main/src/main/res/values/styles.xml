@@ -1,0 +1,18 @@
+<resources>
+
+
+
+
+    <!--switch theme-->
+    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#e6e600</item>
+        <!--<item name="colorSwitchThumbNormal">#cc0000</item>-->
+    </style>
+    <!--switch text theme-->
+    <style name="BrandedSwitch.text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">8dp</item>
+    </style>
+
+</resources>

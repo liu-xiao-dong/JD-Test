@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sxjs.jd.composition.main.MainActivity">
+    <com.sxjs.common.widget.bottomnavigation.BottomNavigationBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:bnbAutoHideEnabled="true"
+        />
+
+
+
+
+        <FrameLayout
+            android:layout_above="@+id/bottom_navigation_bar1"
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+
+
+    <!--app:bnbAutoHideEnabled="false"/>-->
+</RelativeLayout>

@@ -3,9 +3,10 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.2.0'
         classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -33,7 +34,7 @@ ext {
     minSdkVersion = 14
     targetSdkVersion = 25
     compileSdkVersion = 26
-    buildToolsVersion = '26.0.2'
+    buildToolsVersion = '28.0.3'
 
     // App dependencies
     supportLibraryVersion = '26.1.0'
@@ -50,8 +51,12 @@ ext {
     daggerVersion = '2.9'
     butterKnifeVersion = '8.5.1'
     frescoVersion = '1.2.0'
-    arouterVersion = '1.2.0'
-    arouterCompilerVersion = '1.1.1'
+    arouterVersion = '1.4.1'
+    arouterCompilerVersion = '1.2.2'
     easypermissionVersion = '0.3.1'
     autoScrollViewPagerVersion = '2.1.7'
+
+    //控制模块是否参与编译
+    buildMain = true
+    buildTest = true
 }

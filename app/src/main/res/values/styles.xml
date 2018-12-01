@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Base application theme. -->
@@ -17,16 +18,4 @@
         <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
         <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
     </style>
-    <!--switch theme-->
-    <style name="BrandedSwitch.control" parent="Theme.AppCompat.Light">
-        <!-- active thumb & track color (30% transparency) -->
-        <item name="colorControlActivated">#e6e600</item>
-        <!--<item name="colorSwitchThumbNormal">#cc0000</item>-->
-    </style>
-    <!--switch text theme-->
-    <style name="BrandedSwitch.text" parent="Theme.AppCompat.Light">
-        <item name="android:textColor">#fff</item>
-        <item name="android:textSize">8dp</item>
-    </style>
-
 </resources>
