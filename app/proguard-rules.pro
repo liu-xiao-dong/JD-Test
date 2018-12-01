@@ -20,6 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+ -dontwarn com.alibaba.**
 -keep public class com.alibaba.android.arouter.routes.**{*;}
 -keep public class com.alibaba.android.arouter.facade.**{*;}
 -keep class * implements com.alibaba.android.arouter.facade.template.ISyringe{*;}
@@ -28,4 +29,45 @@
 -keep interface * implements com.alibaba.android.arouter.facade.template.IProvider
 
 # 如果使用了 单类注入，即不定义接口实现 IProvider，需添加下面规则，保护实现
-# -keep class * implements com.alibaba.android.arouter.facade.template.IProvider
+ -keep class * implements com.alibaba.android.arouter.facade.template.IProvider
+
+ # okhttp
+ -dontwarn okhttp3.**
+
+ #retrofit
+ -dontwarn retrofit2.**
+ -dontwarn okio.**
+
+ #bugly
+ -dontwarn com.tencent.bugly.**
+ -keep public class com.tencent.bugly.**{*;}
+
+ # =====================fresco================
+
+ -keep,allowobfuscation @interface com.facebook.common.internal.DoNotStrip
+
+ # Do not strip any method/class that is annotated with @DoNotStrip
+ -keep @com.facebook.common.internal.DoNotStrip class *
+ -keepclassmembers class * {
+     @com.facebook.common.internal.DoNotStrip *;
+ }
+
+ # Keep native methods
+ -keepclassmembers class * {
+     native <methods>;
+ }
+
+ -dontwarn okio.**
+ -dontwarn com.squareup.okhttp.**
+ -dontwarn okhttp3.**
+ -dontwarn javax.annotation.**
+ -dontwarn com.android.volley.toolbox.**
+ -dontwarn com.facebook.**
+
+ # =====================fresco================
+
+ #转换JSON的JavaBean，类成员名称保护，使其不被混淆
+ -keepclassmembernames class com.sxjs.jd.entities.** { *; }
+
+ #auto view pager
+ -keepclassmembernames class com.sxjs.common.widget.autoscrollviewpager.** { *; }
