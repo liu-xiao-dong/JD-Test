@@ -11,6 +11,8 @@ import android.view.WindowManager;
 
 import com.sxjs.common.R;
 
+import java.lang.ref.WeakReference;
+
 /**
  * @author：admin on 2017/4/11 17:26.
  */
@@ -21,21 +23,12 @@ public class NoNetWorkNotice {
     private View mView;
     private WindowManager.LayoutParams params;
     private boolean isShowing;
+    private WeakReference<Activity> weakReference;
     private NoNetWorkNotice(final Activity context){
-
+        weakReference = new WeakReference<>(context);
         wdm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
 
-        mView = View.inflate(context, R.layout.no_net_worke_layout , null);
-        mView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Settings.ACTION_SETTINGS);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.getApplicationContext().startActivity(intent);
-
-
-            }
-        });
+        initView();
         //设置LayoutParams(全局变量）相关参数
         params = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.MATCH_PARENT,
@@ -49,13 +42,33 @@ public class NoNetWorkNotice {
 
     }
 
+    private void initView() {
+        if(weakReference.get() != null){
+            mView = View.inflate(weakReference.get(), R.layout.no_net_worke_layout , null);
+            mView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Settings.ACTION_SETTINGS);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    weakReference.get().getApplicationContext().startActivity(intent);
+
+
+                }
+            });
+        }
+
+    }
+
     public  static NoNetWorkNotice getInstance(Activity context){
         return context == null ? null : new NoNetWorkNotice(context);
     }
 
     public void show(){
         isShowing = true;
-        wdm.addView(mView, params);
+        if(mView == null)initView();
+        if(mView != null){
+            wdm.addView(mView, params);
+        }
     }
 
     public void cancel(){
